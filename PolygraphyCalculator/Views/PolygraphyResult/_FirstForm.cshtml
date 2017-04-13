@@ -1,0 +1,17 @@
+﻿<br />
+
+<div>Первая форма</div>
+@*<form action="/PolygraphyResult/PolygraphyCost" method="post">
+    <label>Количество страниц: </label> <input type="text" name="pagesNumber"/> <br />
+    <label>Тираж: </label><input type="text" name="printrun"/><br />
+    <input type="submit" name="ope" value="Пересчитать стоимость"/>
+
+
+</form>*@
+
+@using (Html.BeginForm("PolygraphyCost", "PolygraphyResult"))
+{
+    <label>Количество страниц</label> @Html.TextBox("pagesNumber") <br />
+    <label>Тираж</label> @Html.TextBox("printrun")<br />
+    <input type="submit" name="operation" value="Пересчитать стоимость" />
+}

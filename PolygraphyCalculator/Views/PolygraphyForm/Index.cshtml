@@ -1,0 +1,110 @@
+﻿@model BookProduction.BookModel
+<div class="container">
+    <!--Первая строка-->
+    <div class="row">
+        <div class="col-md-6">
+            <div>Ширина блока в 2 колонок</div>
+        </div>
+    </div>
+
+    <div>Здесь будет форма</div>
+    <h2>Расчетные данные</h2>
+    @using (Html.BeginForm("Index", "PolygraphyForm", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        
+        <div class="form-group">
+            <label for="publishCode" class="control-label col-sm-2">Издательский код</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(m => m.Id, new { @class = "form-control", id = "publishCode", placeholder = "Код" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bookName">Название</label>
+            @Html.TextBoxFor(m => m.Name, new { @class="form-control", id = "bookName", placeholder="Название"})
+        </div>
+        <div>
+            <label>Количество страниц</label>
+            @Html.TextBoxFor(m => m.PagesNumber)
+        </div>
+        <div>
+            <label>Тираж</label>
+            @Html.TextBoxFor(m => m.PrintRun)
+        </div>
+
+        <legend>Внутренний блок</legend>
+        <div>
+            <label>Формат</label>
+            @Html.DropDownListFor(m => m.IBFormat,
+                            new SelectList(new[] { "60*90/16", "60*90/8", "84*108/16", "84*108/32", "70*100/16" }))
+        </div>
+
+
+        <div>
+            <label>Бумага</label>
+            @Html.DropDownListFor(m => m.IBPaper,
+                            new SelectList(new[] { BookProduction.PaperFullType.Newsprint_45,
+                                                    BookProduction.PaperFullType.Offset_60,
+                                                    BookProduction.PaperFullType.Offset_80}))
+        </div>
+
+
+        <div>
+            <label>Цветность</label>
+            @Html.DropDownListFor(m => m.IBColors,
+                            new SelectList(new[] { "1+1", "2+2", "4+4" }))
+        </div>
+
+        <legend>Обложка</legend>
+        <div>
+            <label>Бумага</label>
+            @Html.DropDownListFor(m => m.CoverPaper,
+                            new SelectList(new[] { BookProduction.PaperFullType.FoldingBoxboard_230,
+                                                    BookProduction.PaperFullType.CardboardAliaska_230}))
+        </div>
+
+        <div>
+            <label>Цветность</label>
+            @Html.DropDownListFor(m => m.CoverColors,
+                            new SelectList(new[] { "4+0", "4+1", "4+4" }))
+        </div>
+
+        <legend>Сборка</legend>
+        <div>
+            <label>Переплет</label>
+            @Html.DropDownListFor(m => m.Binding, new SelectList(new[] { BookProduction.BindingType.SaddleStitching,
+                                                                    BookProduction.BindingType.PerfectBinding,
+                                                                    BookProduction.BindingType.HardcoverBinding }))
+        </div>
+
+        <div>
+            <label>Ламинация</label>
+            @Html.DropDownListFor(m => m.Lamination, new SelectList(new[] { BookProduction.LaminationType.Glossy,
+                                                                    BookProduction.LaminationType.Matte,
+                                                                    BookProduction.LaminationType.withoutLamination }))
+        </div>
+
+        <div>
+            <label>Перфорация</label>
+            @Html.CheckBoxFor(m => m.Perforation)
+        </div>
+
+        <br />
+        <input type="submit" name="button" value="Calculate" />
+
+        if (ViewBag.Report != null)
+        {
+            <div>
+                <h3>Расходы на тиражирование</h3>
+                Затраты на полиграфию: @ViewBag.Report.CostOfPolygraphy грн<br>
+                Затраты на материалы: @ViewBag.Report.CostOfMaterials грн<br>
+                Затраты на сборку: @ViewBag.Report.CostOfAssembly грн<br>
+                Затраты на тираж: @ViewBag.Report.CostOfPrintRun грн<br>
+                <b>Затраты на 1 экземпляр: @ViewBag.Report.CostOfPolygraphyPerOneItem грн</b><br>
+            </div>
+        }
+
+    }
+
+
+
+</div>

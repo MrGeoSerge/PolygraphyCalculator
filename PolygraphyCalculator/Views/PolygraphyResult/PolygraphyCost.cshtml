@@ -1,0 +1,35 @@
+﻿@model BookProduction.BookCostOfPolygraphy
+@{
+    @*Определение файла компоновки для данного представления*@
+    @*Layout = "~/Views/Shared/_Layout.cshtml";*@
+ViewBag.Title = "Polygraphy Calculator";
+}
+
+@section BookParams{
+    <div>
+        Код: @Model.book.Id<br />
+        Название: @Model.book.Name <br />
+        Тираж: @Model.book.PrintRun <br />
+        Количество страниц: @Model.book.BookParts[0].PagesNumber <br />
+    </div>
+}
+
+@*Визуализация частичного представления*@
+@Html.Partial("_FirstForm")
+
+
+
+<div>Инфа между секциями</div>
+<br />
+@section PolygraphyCost{
+    <div>
+        <h3>Расходы на тиражирование</h3>
+        Затраты на полиграфию: @Model.CostOfPolygraphy грн<br>
+        Затраты на материалы: @Model.CostOfMaterials грн<br>
+        Затраты на сборку: @Model.CostOfAssembly грн<br>
+        Затраты на тираж: @Model.CostOfPrintRun грн<br>
+        <b>Затраты на 1 экземпляр: @Model.CostOfPolygraphyPerOneItem грн</b><br>
+    </div>
+
+}
+

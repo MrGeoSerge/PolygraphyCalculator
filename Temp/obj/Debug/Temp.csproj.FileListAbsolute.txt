@@ -1,0 +1,6 @@
+D:\Dropbox\C#\BookProduction2017\Temp\bin\Debug\Temp.exe.config
+D:\Dropbox\C#\BookProduction2017\Temp\bin\Debug\Temp.exe
+D:\Dropbox\C#\BookProduction2017\Temp\bin\Debug\Temp.pdb
+D:\Dropbox\C#\BookProduction2017\Temp\obj\Debug\Temp.csprojResolveAssemblyReference.cache
+D:\Dropbox\C#\BookProduction2017\Temp\obj\Debug\Temp.exe
+D:\Dropbox\C#\BookProduction2017\Temp\obj\Debug\Temp.pdb

@@ -1,0 +1,9 @@
+D:\Dropbox\C#\BookProduction2017\BookProduction\bin\Debug\BookProduction.pdb
+D:\Dropbox\C#\BookProduction2017\BookProduction\obj\Debug\BookProduction.pdb
+D:\Dropbox\C#\BookProduction2017\BookProduction\obj\Debug\BookProduction.Resource1.resources
+D:\Dropbox\C#\BookProduction2017\BookProduction\obj\Debug\BookProduction.csproj.GenerateResource.Cache
+D:\Dropbox\C#\BookProduction2017\BookProduction\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Dropbox\C#\BookProduction2017\BookProduction\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Dropbox\C#\BookProduction2017\BookProduction\bin\Debug\BookProduction.dll.config
+D:\Dropbox\C#\BookProduction2017\BookProduction\bin\Debug\BookProduction.dll
+D:\Dropbox\C#\BookProduction2017\BookProduction\obj\Debug\BookProduction.dll
