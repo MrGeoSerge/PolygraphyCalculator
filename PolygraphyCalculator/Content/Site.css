@@ -17,8 +17,17 @@
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
-input,
+/*input,
 select,
 textarea {
     max-width: 280px;
+}*/
+
+
+form{
+            width: 850px;
+            margin: 0px auto;
+            border: 1px solid grey;
+            padding: 20px;
+
 }

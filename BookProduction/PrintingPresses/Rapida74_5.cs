@@ -4,8 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BookProduction;
+using BookProduction.BookComponents;
+using BookProduction.Assembly;
+using BookProduction.IssueParams;
+using BookProduction.Paper;
+using BookProduction.PriceLists;
+using BookProduction.PrintingPresses;
+using BookProduction.Tasks;
+using BookProduction.TypographyManagement;
 
-namespace BookProduction
+namespace BookProduction.PrintingPresses
 {
     public class Rapida74_5 : SheetPress
     {
@@ -29,15 +38,7 @@ namespace BookProduction
             {
                 return 0.0;
             }
-
-            foreach (var issueColors in RapidaPressPriceList.Fitting)
-            {
-                if (issueColors.Key == TaskToPrint.Colors)
-                {
-                    return issueColors.Value;
-                }
-            }
-            throw new ArgumentOutOfRangeException("такой цветности издания в прайсе нет");
+            return RapidaPressPriceList.Fitting[TaskToPrint.Colors.ToString()];
         }
 
         //процент технужд

@@ -1,0 +1,1273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ea4c2763-bb4e-4570-af3f-9248d97197e4" name="BookProduction" linkedPackageId="5ef66ac5-0b09-49d9-a5dc-8450446318b6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="fd8ee938-344a-4148-a7e5-7fbef8dce8e2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="303a69ff-02c3-46f5-a8e3-3cf6122faf13" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8a28a402-1002-4604-b439-fc264b2b7bfc" />
+        <targetEnds>
+          <association Id="a45079c6-fb7d-4d2e-bbb7-3558fb45b065" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c28e9a3d-5c6a-47e6-9d40-4fa7ec65e43a" LastKnownName="Book" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0583327d-6362-4c48-8360-a370afd627d2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="62deed53-817c-48dd-85ef-aeeab822de57" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa8e3609-f108-4ca2-b46b-8b9959cccbc9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="758f6d49-a4b0-4efc-aea0-586ade526e0c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2d17bed6-6598-4619-9b35-a574e6fbc56d" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="f3048aa6-41f4-4e04-af41-d3d9ef72cdde" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5727abd-434c-48b0-9e90-810a77d35f83" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="97424d5b-1451-4445-949a-da46ce92e75e" direction="Return" isUnique="false">
+                  <elementDefinition Id="b7462956-6d16-446c-bad1-b831f29ab012" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c28e9a3d-5c6a-47e6-9d40-4fa7ec65e43a" name="Book" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="70bb88dc-0e58-4141-a922-82b641a91ae3" />
+        <targetEnds>
+          <association Id="111d431d-d247-4cd2-a084-8c1ae7560837" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5d4bb1b8-d6dd-42e4-8339-2e6830b4939b" LastKnownName="PolygraphyParams" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9fd731ef-04a1-47b8-9ae1-8e1f6e6bff0d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6bc613c5-6197-444c-bcce-9d5004949581" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aea83ead-dce7-4a6b-a21b-97edfaec345d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="acbe8f0a-2473-484f-a8d1-32fb7eac42f3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7d5b955e-091a-4022-809e-5c6674fd788a" />
+          </association>
+          <association Id="2bd7be6f-26f2-4ad6-a895-0fd0bf91a110" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9a8e69d1-183e-47cf-b62a-bff794133727" LastKnownName="BookCostOfPolygraphy" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be5e9289-b7d1-40d8-b403-52177e605e3d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="017b3537-1671-4043-9971-2852cb318c19" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba4bd4e1-e33a-4441-b145-386000c5b70b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bbfb7dbd-d8e4-49a2-90c7-7d392c6c0d0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9d8bdb5b-3c5f-40ee-8560-dcb8bf0dc4d2" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="8b99952a-9ce9-4ae3-9633-ad7197de09f7" name="PolygraphyParams" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="303c9416-b83c-4678-912c-3d0379521b0a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7669774d-798e-4cfb-90e1-9be1ea04b8dd" LastKnownName="PolygraphyParams" />
+            </type_NamedElement>
+          </property>
+          <property Id="03854cdc-ea9a-43d9-aeb1-b1ca440e1f23" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="de7fd3be-399a-40f9-92ef-279ff0804d9e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9ccba6a2-53e5-415e-9ac9-bf10cafb0486" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="596b0c07-8acd-4c91-abaa-73051c8aaa11" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="938902f2-bc7d-4075-91a1-faee2477242b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9ccba6a2-53e5-415e-9ac9-bf10cafb0486" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="0625d199-68df-471a-af77-f88bb9fc8bcb" name="CostOfPolygraphy" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="11d97208-2729-443c-b433-6969556812df" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="922e5da1-2a2e-475b-8a29-c3869d53b7db" LastKnownName="BookCostOfPolygraphy" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9bf2e4c7-6936-4dc2-a02a-a0a2fbbf110d" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1ec49a13-082a-437a-a4d8-5dd3e83ddc24" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7669774d-798e-4cfb-90e1-9be1ea04b8dd" name="PolygraphyParams" isAbstract="false" isLeaf="false" cachedFullName="PolygraphyParams">
+        <elementDefinition Id="d52dff83-2dd8-4957-8f41-1c0e3dd56222" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9ccba6a2-53e5-415e-9ac9-bf10cafb0486" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="8483dd55-214b-446a-a8af-8578dc2410be" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="922e5da1-2a2e-475b-8a29-c3869d53b7db" name="BookCostOfPolygraphy" isAbstract="false" isLeaf="false" cachedFullName="BookCostOfPolygraphy">
+        <elementDefinition Id="66533fa7-d0ae-41de-898a-a16eed1d0150" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5d4bb1b8-d6dd-42e4-8339-2e6830b4939b" name="PolygraphyParams" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1e960486-c10b-4ec8-ad58-4a649a060300" />
+        <targetEnds>
+          <association Id="7d59bbd3-7dac-46bf-aff1-e9bb174385e5" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ee45a513-f222-422f-83a2-4a088fcdd498" LastKnownName="BookAssembly" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ea9972d-da8a-4862-86a2-d3311779bea3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="33a16d8a-bcf9-4e6e-9db2-cc0f09341bfb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a1a2db8-127c-4565-8bcf-87ecb2447f8e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="3e34d938-202e-4a98-a8aa-bad2acedbbe4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b00febc4-47fc-4cea-9398-6713beb207c9" />
+          </association>
+          <association Id="1e784302-6bcd-4e5e-ac6c-e65adb86ddf9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6147882b-bc93-410a-b109-baadbc078aae" LastKnownName="BookPart" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b81bf6e3-c3db-4876-957b-247a7551a9c7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1ce5258a-8ad5-40c1-856c-fcad61a76084" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c245a367-260c-4bd6-97be-6f9de5905231" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="f3c1dc99-f3ea-42e3-a215-1a9300347ee3" name="Lower" value="1">
+                      <elementDefinition Id="5a5683be-fd34-4771-9358-6c61b301a959" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d12c9a8b-661a-4cb8-92e8-809d7889b58d" name="Upper" value="*">
+                      <elementDefinition Id="ddf40883-9c22-4c3c-83d2-6084adaffaa9" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="4b952b93-b62e-4f19-984f-6c463f78e5c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="555795cb-5f21-44ce-87a7-e66625f2af55" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c8660f10-3968-4eb3-9864-ed98a9e53710" name="BookAssembly" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6c338575-e5b5-48b5-9605-1c465cbe75b1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="28e92cdb-e07e-41fb-a383-544af93fa2ac" LastKnownName="BookAssembly" />
+            </type_NamedElement>
+          </property>
+          <property Id="2b069bae-dd60-4ee9-86cd-6922026a7568" name="BookParts" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="547f906b-1145-4833-b5e0-d9d6be7f0736" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d60b15b4-f4f7-4507-bedc-92f4a6cbeccc" LastKnownName="List&lt;BookPart&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="593f15dd-80f4-44a1-b0fc-6e4d4f418ae7" name="PrintRun" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b0fab304-bf86-4816-b866-87c4e5082dce" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="07cbd618-49f0-4431-ad1e-19fbedbf3a66" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="28e92cdb-e07e-41fb-a383-544af93fa2ac" name="BookAssembly" isAbstract="false" isLeaf="false" cachedFullName="BookAssembly">
+        <elementDefinition Id="7941cfcc-fe52-4f22-8aee-86e498d4fed8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d60b15b4-f4f7-4507-bedc-92f4a6cbeccc" name="List&lt;BookPart&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;BookPart&gt;">
+        <elementDefinition Id="b5267a81-138c-4fcb-a716-7e322694d2d4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="07cbd618-49f0-4431-ad1e-19fbedbf3a66" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="2890fcf2-f6dc-43a6-beb8-a7e980c6b9c0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="969c9ae5-5085-46d1-bb32-88e092eef204" name="binding" isAbstract="false" isLeaf="false" cachedFullName="binding">
+        <elementDefinition Id="30320b12-f542-45b1-a4c6-fe7b9946efb0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="eb99195f-42fb-4dc0-8566-3353031e8223" name="LaminationType" isAbstract="false" isLeaf="false" cachedFullName="LaminationType">
+        <elementDefinition Id="7b767262-e726-4bf1-a0e9-dc87541a085e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="36e88730-5e4e-4a19-8f27-27d63566e822" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="98922a4c-9a9e-40a4-a920-4ca8cf78dc2a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5dc9e42e-5af1-46a5-84c4-0d8b289d5d6f" name="PerforationType" isAbstract="false" isLeaf="false" cachedFullName="PerforationType">
+        <elementDefinition Id="f2cb21ac-4875-40e6-9262-13d96c5bc7a0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ee45a513-f222-422f-83a2-4a088fcdd498" name="BookAssembly" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="37e0ca2d-b5e8-410b-93d2-5b8c61c270b2" />
+        <ownedAttributesInternal>
+          <property Id="36969825-3498-4201-9240-d2e03f527193" name="Binding" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d525852b-977f-49d5-9a34-108cfdaf5ff4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="969c9ae5-5085-46d1-bb32-88e092eef204" LastKnownName="binding" />
+            </type_NamedElement>
+          </property>
+          <property Id="0ab298b9-cfb3-4a9a-bf59-fd699fc64197" name="Lamination" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e306de25-0997-4506-a29c-db56f19b11b9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="eb99195f-42fb-4dc0-8566-3353031e8223" LastKnownName="LaminationType" />
+            </type_NamedElement>
+          </property>
+          <property Id="6440fa29-b707-4785-8deb-62d852ea84be" name="Packaging" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e166ebe8-ac54-42c2-a917-2fc5d13dd651" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="36e88730-5e4e-4a19-8f27-27d63566e822" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+          <property Id="ce47d7d8-a073-4ca9-9f7c-526813a67897" name="Perforation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ef808d0d-a93a-46d2-841c-d5c67c1ee6de" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5dc9e42e-5af1-46a5-84c4-0d8b289d5d6f" LastKnownName="PerforationType" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a50f8d58-6055-430a-af79-00ba31922807" name="BookAssembly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="983c4c9c-bd77-4ff3-8fbc-5ca0393246ab" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9613ceed-de0c-4c95-91b6-12a4a03208cc" name="BindingType _bindingType" direction="In" isUnique="false">
+                  <elementDefinition Id="461642f7-cdb7-43e0-a5be-1cda3f30f74e" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1a30b10d-706e-44b7-9176-8ef283c3725e" name="LaminationType _laminationType" direction="In" isUnique="false">
+                  <elementDefinition Id="07f1cb17-646c-4a0b-bb18-cbd09a3ad802" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7c43967a-df37-440e-bed0-422ac11a46fe" name="bool _packaging" direction="In" isUnique="false">
+                  <elementDefinition Id="79564ab3-ee80-4911-873d-6dfa4903b1e5" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cf90e8a4-6c34-488d-87ad-f998b9d203f8" name="BookAssembly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fbd3fc65-34bd-4eb6-bad2-f023b621ba1f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="861cf0cf-dbd1-4649-9fbe-a016ed0631cc" name="BindingType _bindingType" direction="In" isUnique="false">
+                  <elementDefinition Id="49702a1f-ed71-4a4c-a8d2-b293c7deb2d2" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3273d6bb-5834-497d-a81d-3001478dd1d7" name="LaminationType _laminationType" direction="In" isUnique="false">
+                  <elementDefinition Id="d54a1001-47a7-400b-a12c-7319a2c28552" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="534c521c-bf68-41e4-8df4-94c069e44860" name="bool _packaging" direction="In" isUnique="false">
+                  <elementDefinition Id="ad09260a-8d69-44d7-8b66-edc466c1f209" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="17eabc52-67f2-4aef-a4be-d87e625f36b3" name="PerforationType _perforation" direction="In" isUnique="false">
+                  <elementDefinition Id="9fd2a59a-fe91-4a38-8903-d1c93811d57d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6d4c7315-aff0-45aa-9360-5fb3d827fa13" name="IssueColors" isAbstract="false" isLeaf="false" cachedFullName="IssueColors">
+        <elementDefinition Id="27ade3d2-958e-446a-8043-49262ad30ebb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2aac50b2-ca54-4762-83f2-bb4c505b2917" name="IssueFormat" isAbstract="false" isLeaf="false" cachedFullName="IssueFormat">
+        <elementDefinition Id="5e212eaa-f623-4148-a5ed-888398cedf7b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="689e8fa9-238c-4920-89e5-4a6eff5d7cb5" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="8483dd55-214b-446a-a8af-8578dc2410be" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fdb10bfa-8733-4a33-8b88-00554508f6e6" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="2890fcf2-f6dc-43a6-beb8-a7e980c6b9c0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4ab105ed-acb6-4cd3-a503-aeffb4887152" name="AbstractPaper" isAbstract="false" isLeaf="false" cachedFullName="AbstractPaper">
+        <elementDefinition Id="c3c05c2a-e83f-4cdc-b916-e97e7d9b0e6b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6147882b-bc93-410a-b109-baadbc078aae" name="BookPart" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a5a609c4-93e3-4825-ad49-489c59a0f4a7" />
+        <targetEnds>
+          <association Id="2382e5d4-4720-479c-825d-086e3b2f3d79" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="20616c69-dc4a-4458-8652-d8c60c85201f" LastKnownName="AbstractPaper" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0fda788-7abc-46c9-b8cf-0e9b151939e0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5ccb959e-bfed-4e31-9b39-869adcc051d2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03657504-9b51-4360-9a96-9e01d759c135" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="da9702a3-7739-4da5-aad1-57f545f28039" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4be664ea-86b7-443d-b904-7b326c995be6" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3cf5b0b3-c2f5-4a2f-acd4-2a657854fd2b" name="Colors" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="84fabec9-92dc-4d3f-bf22-8ed7f3f0fce8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6d4c7315-aff0-45aa-9360-5fb3d827fa13" LastKnownName="IssueColors" />
+            </type_NamedElement>
+          </property>
+          <property Id="5f30b790-2dc2-4cbc-9123-23ad34b5415a" name="Format" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a36b9eaa-af94-4f90-b672-adf38f8ff75e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2aac50b2-ca54-4762-83f2-bb4c505b2917" LastKnownName="IssueFormat" />
+            </type_NamedElement>
+          </property>
+          <property Id="545db673-323d-4a92-b1f5-12a622d5adb6" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b392617b-ee21-42ef-8cf3-ea890b5c06da" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="689e8fa9-238c-4920-89e5-4a6eff5d7cb5" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="d1fbf3cc-5b3d-4c1b-999d-f90a13d6200f" name="PagesNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f6024877-44c4-4f25-9fff-b0532ea193d1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fdb10bfa-8733-4a33-8b88-00554508f6e6" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="86839220-e7d2-4705-bb45-d825fac5bfd2" name="Paper" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4f58b272-bf67-4ef2-9eeb-204c0c71a05d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4ab105ed-acb6-4cd3-a503-aeffb4887152" LastKnownName="AbstractPaper" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1d5625d5-d323-406b-8f8b-b90fb5a6fc69" name="BookPart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="01809b2f-befb-4ca1-bad4-ada16fa9e360" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4ee5bb27-52db-42fd-a24d-75e845cad088" name="string name" direction="In" isUnique="false">
+                  <elementDefinition Id="161ea158-62cc-4278-b69f-922cbf7b351a" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bf10fce6-3210-4788-895d-87f31621065a" name="IssueFormat format" direction="In" isUnique="false">
+                  <elementDefinition Id="b9bd64cf-a619-46e6-98bb-48e8f5834c38" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fc96b32c-df40-4885-89d7-fbf7f7fcfb27" name="AbstractPaper paper" direction="In" isUnique="false">
+                  <elementDefinition Id="6be24e3f-e142-4dd4-9e99-3e0d54d936b2" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6a0130a2-d48e-443a-b764-288b197ab382" name="IssueColors colors" direction="In" isUnique="false">
+                  <elementDefinition Id="7e518f83-75df-42ba-9e64-406d492f6cc8" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="38b67e3f-99e0-49c6-b99d-6938de4aee3e" name="int pagesNumber" direction="In" isUnique="false">
+                  <elementDefinition Id="b185359e-9827-46a4-a8cd-d14e9da38e21" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="20b80f2d-297a-4940-a795-1ab7425508fc" name="BookPart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e61d6818-857d-4440-a1da-abd2c6a186cb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="20616c69-dc4a-4458-8652-d8c60c85201f" name="AbstractPaper" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8e699ca2-bc46-4dea-85c2-d7d770ef022e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="30160950-8694-4348-932f-bff60970b393" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="59b86051-bc0b-481f-8629-33af1b0aa676" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="8483dd55-214b-446a-a8af-8578dc2410be" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9a8e69d1-183e-47cf-b62a-bff794133727" name="BookCostOfPolygraphy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6dcfec9a-53e7-48c9-b21f-95c6e265c04f" />
+        <ownedAttributesInternal>
+          <property Id="f3c6178a-dda5-4836-af60-0c7e09041b06" name="CostOfPolygraphy" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="23da6cd5-60c3-466d-a604-cd1da0d14efb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="cafa27bb-e1a9-4f38-8ad4-0da07b61b40a" name="CostOfMaterials" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="896b9ffc-1ba3-44e2-a8f2-b0cb5e2f3e4e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="efb2215a-570e-4c64-acbe-d6648eb8ef79" name="CostOfAssembly" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2c622ef8-8fc2-4556-ad0c-729b6751b76a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="37d81f53-aa57-4ea3-acc9-21c1de855622" name="CostOfPrintRun" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0dc69650-20ba-4f4c-a98c-718c7409159d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="31843e79-fd92-4599-b83a-5b6c8ddaa4bc" name="CostOfPolygraphyPerOneItem" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f805b20c-5ffc-4be3-825f-61eb4cfc6240" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="4c6e1646-6078-4653-9dca-a6230d7860e1" name="BookCostOfPolygraphy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cb93bcfa-5dea-45b3-b4cd-c4237be71cef" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a28cbbeb-947b-44d0-a575-088be9732eec" name="Book _book" direction="In" isUnique="false">
+                  <elementDefinition Id="755a6920-92ca-4414-b602-b87ab01171ff" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="561fe511-5152-4427-9eee-0452a0373668" name="PressReport innerBlock" direction="In" isUnique="false">
+                  <elementDefinition Id="907d9647-8d1b-4803-aec1-8c101cab11ec" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2dec37e8-3f34-4e73-b470-384428ff34b4" name="PressReport cover" direction="In" isUnique="false">
+                  <elementDefinition Id="fe3028cc-e05a-435c-8043-4e1e1840c5f9" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="11794fa6-9fc2-4fde-93ac-3309aab288b8" name="AssemblyReport assembly" direction="In" isUnique="false">
+                  <elementDefinition Id="41fac603-a0cc-4b70-bd1b-8b29e6c2f888" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ee739ea1-cfeb-4e4b-af70-9bad538b66fc" name="CostReport" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3c8026b4-196b-42c3-83da-3b7a1f7921e7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f47ec3d5-5ef2-46d0-962d-5c475401876f" direction="Return" isUnique="false">
+                  <elementDefinition Id="76dea7de-ef7a-42e4-b754-23bb648094bc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59b86051-bc0b-481f-8629-33af1b0aa676" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="37bb20c8-a3ad-49fe-ac17-48d8608b8c9d" name="DirectorOfTypography" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="44f5d7e4-3a1c-4222-bb38-bff1a7d07e66" />
+        <targetEnds>
+          <association Id="c14bf4bd-4904-4e39-b334-1feae27136ed" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c28e9a3d-5c6a-47e6-9d40-4fa7ec65e43a" LastKnownName="Book" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c3067c0-719f-4051-ad4d-b3a1cd14f206" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1ff67f14-ffd7-40ef-98da-a324bfeb1a22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58ea5d74-2863-4f9c-9b27-32f750da7f94" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5bf61d6a-9f9d-45a5-a2ff-3162e3820a07" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68648ad4-b67c-426c-95b2-c1286fa3ca8f" />
+          </association>
+          <association Id="c5aede5c-31f1-4884-9086-70b5363643a3" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c4f57a12-003b-4db9-8649-5517bb86db60" LastKnownName="PrintingDepartment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2a2a88d4-62d7-4227-a429-919d39876294" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3f4fa9af-7f4c-42d8-897b-6ec45e3858cb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="960bf638-b9fb-45b9-a7cb-bfb68341e978" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1684f124-6570-4011-8786-687f26f9c169" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4bb89581-898e-4066-a0f9-db7ff8465cef" />
+          </association>
+          <association Id="9d441ab1-2a8a-4ea5-b862-d369ee764db1" isDerived="false" sourceEndRoleName="DirectorOfTypography" targetEndRoleName="AssemblyDirector" isLeaf="false" isAbstract="false">
+            <classMoniker Id="20d02e38-61fa-4cce-be88-bc6a32610353" LastKnownName="AssemblyDirector" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="948d61f1-c26b-4e80-8d98-4bff17ac1a8f" name="DirectorOfTypography" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f5b4709c-9458-45a3-8a5e-f411052b29f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba633181-adc7-43e3-9515-83e53186c310" name="AssemblyDirector" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="add25013-4969-4b0d-82d9-9171ab840807" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7e4af748-1c56-49fc-ac63-40c4f6a5e6c4" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7e3f5073-3613-445d-97b4-79e806797240" name="book" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f720cd7-5a69-41bc-a39c-c7081f021e92" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7f8be56b-d700-4d86-99c6-7dc16e4c3150" LastKnownName="Book" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="23ac7343-e08d-4ea9-8435-e3c4605d7ba3" name="DirectorOfTypography" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0cad4628-f849-403f-ac50-d5b7d45b54ea" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7baeb247-ca55-49ef-a492-0e63fc38b9cb" name="Book book" direction="In" isUnique="false">
+                  <elementDefinition Id="a2110168-17a6-462c-a9d9-70efaacecc91" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c99e1bea-b18f-4236-bfcf-6a880f1246cb" name="MakeBook" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2f895a2c-5af5-4509-8a7b-763d76f4d737" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="27f211ca-27c6-40f3-ad15-ba9ea6fe8de7" direction="Return" isUnique="false">
+                  <elementDefinition Id="19590f6b-6eeb-4360-b899-512a75d7966c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="840543bb-48fe-42bb-9e04-5bd32a31d7af" LastKnownName="BookCostOfPolygraphy" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="42d259ca-ae42-4b54-b82e-4ea73a2258e8" name="AssembleBook" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e77c581c-fe68-4285-92e1-6e74b87bcb7e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="639103d2-9d42-4e39-b5a8-24f8ab49b4da" direction="Return" isUnique="false">
+                  <elementDefinition Id="de66f827-d568-4b38-8f5c-12b8b241c3ec" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7f8be56b-d700-4d86-99c6-7dc16e4c3150" name="Book" isAbstract="false" isLeaf="false" cachedFullName="UML_BookProduction::Book">
+        <elementDefinition Id="70bb88dc-0e58-4141-a922-82b641a91ae3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="840543bb-48fe-42bb-9e04-5bd32a31d7af" name="BookCostOfPolygraphy" isAbstract="false" isLeaf="false" cachedFullName="UML_BookProduction::BookCostOfPolygraphy">
+        <elementDefinition Id="6dcfec9a-53e7-48c9-b21f-95c6e265c04f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c4f57a12-003b-4db9-8649-5517bb86db60" name="PrintingDepartment" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e6690bd8-c0cb-4968-b212-037f84ee551f" />
+        <ownedAttributesInternal>
+          <property Id="62a81202-7bd6-4024-94c7-8ecbf3c14029" name="book" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d99c473f-1d8b-4860-b6e8-6ec7329fb549" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7f8be56b-d700-4d86-99c6-7dc16e4c3150" LastKnownName="Book" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="69ea8deb-cae8-4cf0-93f1-8759bfca0bd7" name="PrintingDepartment" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b3600307-bfa6-48f6-811f-0baaa3e03b26" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d8fc2ab6-0df5-4914-aca8-c3b9f55bcdfe" name="Book _book" direction="In" isUnique="false">
+                  <elementDefinition Id="b024eaf4-3fbc-4ea7-9991-5dd900efe266" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1e544224-30ac-49e9-888f-a9d1071728a9" name="PrintBookPart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f24abd2e-e9ef-4275-a9a2-f4cfc6a1be9e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="513934ab-e688-46b6-be01-ad1a85fb8704" direction="Return" isUnique="false">
+                  <elementDefinition Id="bf5ea916-0beb-44b6-aaa8-622474da70a8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cd30a4b9-b7e3-4f1f-83c0-001151dbd19e" LastKnownName="PressReport" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="11cc5a4e-2d39-448e-b75d-3e58e12772ab" name="TaskToPrint _taskForPart" direction="In" isUnique="false">
+                  <elementDefinition Id="0cc7767d-a31f-4a07-933d-5c82fe80c459" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="cd30a4b9-b7e3-4f1f-83c0-001151dbd19e" name="PressReport" isAbstract="false" isLeaf="false" cachedFullName="PressReport">
+        <elementDefinition Id="0b2e5394-5571-4219-ba06-1c372fade3d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="457cd2a7-150a-46e1-8d4f-9e178db5f216" name="AssemblyReport" isAbstract="false" isLeaf="false" cachedFullName="UML_BookProduction::BookAssembly::AssemblyReport">
+        <elementDefinition Id="992539b4-53e9-4ce5-a979-b55bc8905504" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7c151b4a-44f4-4c8a-b2cf-3ca09df39761" name="IAssemblyDepartment" isAbstract="false" isLeaf="false" cachedFullName="UML_BookProduction::BookAssembly::IAssemblyDepartment">
+        <elementDefinition Id="6bb299c7-5e44-4cc3-a8cb-e3376469f83b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="0a9c0d4e-46d7-46c1-8e1d-5051a45e6418" name="BookAssembly">
+        <ownedCommentsInternal>
+          <comment Id="1566bebf-9d2b-44d5-9179-ad35dccbea9b">
+            <elementDefinition Id="11a30001-b2bf-4cc3-9183-64315a3b7fce" />
+            <body>Реализация паттерна Builder
+</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="d918e9dd-1ba5-4f3a-8280-76a799b7e4c5" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="485d499c-7cfd-4cab-947f-db2c4aff559d" name="AssemblyReport" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="992539b4-53e9-4ce5-a979-b55bc8905504" />
+              <ownedAttributesInternal>
+                <property Id="a0f0d68b-2031-47e6-b99e-f84534220593" name="CostOfBinding" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="539f4eda-4b01-4ca6-a913-f0a7b2dec923" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+                  </type_NamedElement>
+                </property>
+                <property Id="a8559ab4-9a58-43bc-a08f-9f2b8e28aa08" name="CostOfPerforation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d8335fff-3216-4ca0-9e58-365b07aade29" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+                  </type_NamedElement>
+                </property>
+                <property Id="cb0b142e-e0a0-4920-9d0f-687d840bd134" name="CostOfLamination" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4163f938-f956-4e9b-bd76-c2c8cd61453c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+                  </type_NamedElement>
+                </property>
+                <property Id="40651e18-3a13-47a9-abb9-8cc83a273e31" name="CostOfPackaging" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="acd216ed-4494-42ed-a951-f4dc990e524d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+                  </type_NamedElement>
+                </property>
+                <property Id="231cb8b6-5cfd-41ce-ac4b-0b4ea6ec254a" name="TotalCostOfAssembly" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="50eaa3db-57b1-485b-9317-b121c92acc9e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="15cf53d6-e0f7-4ed0-ade1-6af8693d7804" name="AddCostOfBinding" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f8902d84-7feb-4060-be36-80cd676608e9" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="eec61bbd-fa90-45cc-8f47-eef76d6f0a4a" name="double _costOfBinding" direction="In" isUnique="false">
+                        <elementDefinition Id="8f05f005-2fb2-4f04-95de-ceb5ed18d102" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b34b0a39-8ea8-454d-8de4-cf42d7358885" direction="Return" isUnique="false">
+                        <elementDefinition Id="21483f3d-363c-4f9b-be67-e9fec2587347" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="5d308e02-0a9a-4a8b-84a7-9c8f952591b0" name="AddCostOfPerforation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="eab8f7da-6fb9-4e72-9629-7cf3ff546ae5" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e2ad8d63-3381-493b-ba0e-80054fb1c24f" name="double _costOfPerforation" direction="In" isUnique="false">
+                        <elementDefinition Id="3713363a-7fe7-4a83-944e-13aed5f2775c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a398cd29-04da-4e49-96fd-c9180cc7d5ce" direction="Return" isUnique="false">
+                        <elementDefinition Id="470c4d1a-d926-4043-b0dc-9160285870a6" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="218c6cbe-ec65-41af-a47b-1c6c85d0253e" name="AddCostOfLamination" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="175ca96e-3f8a-4573-942d-e81d8ff61683" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="be0ab9fa-3f5e-415e-bced-9ee27ee0e780" name="double _costOfLamination" direction="In" isUnique="false">
+                        <elementDefinition Id="838a860c-526d-461a-8052-ea5b0f54285c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9c661732-6160-4c3f-a221-1d6b9f91496a" direction="Return" isUnique="false">
+                        <elementDefinition Id="85156c89-b65e-402d-8f3a-c8f070c91814" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="9662d285-48f1-4520-8880-279f18e8ed25" name="AddCostOfPackaging" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="799dc976-8c2b-40b1-8538-d1f70426a406" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="66e4b8fd-4601-43ca-be70-f54877f6eb4f" name="double _costOfPackaging" direction="In" isUnique="false">
+                        <elementDefinition Id="8d8a9e64-22e6-4e41-b380-05fdb3129b91" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c5437489-e048-4ac9-831a-8bf461ab2938" direction="Return" isUnique="false">
+                        <elementDefinition Id="bb29900b-f5ee-483e-b080-c4c3d1a36839" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1b13fc04-7e24-4269-b233-97e01790d0f8" name="CalcTotalCostOfAssembly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="00c5330b-b8bb-417e-86ba-325b882879b1" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d66ce51a-edd2-4d1e-8510-7d0083f4c169" direction="Return" isUnique="false">
+                        <elementDefinition Id="26406d29-c29c-414d-b672-67c72f57d282" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="4fcd413b-b9ce-4760-8aa1-6fab8f73cf36" name="IAssemblyDepartment" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="6bb299c7-5e44-4cc3-a8cb-e3376469f83b" />
+              <ownedOperations>
+                <operation Id="02519a4a-8197-4139-83bb-e8e2672ddae3" name="MakeLamination" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0694aa22-1d4b-4390-924a-f75aab846a16" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="855c6e07-69a6-4b53-b1aa-878d7c2095dd" direction="Return" isUnique="false">
+                        <elementDefinition Id="77272f94-ca9d-41f1-8799-361bc60d70a4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="955120f6-7499-47b8-93c7-eeb34fde6ca3" name="MakePerforation" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="cb029879-3230-43a4-8c25-7743ad3e0f94" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="76899e8f-68d6-4fd1-b3b3-9bf41c6d9a26" direction="Return" isUnique="false">
+                        <elementDefinition Id="3cf8a133-f9d8-4b55-84c3-797432321211" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="fd5400c9-1fd2-4261-bcc5-e672750dde9e" name="MakeBinding" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="028df7ae-78b2-456d-9252-7c1fea496d1e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cba8362c-c3a5-4650-a00e-6ac7efcd577f" direction="Return" isUnique="false">
+                        <elementDefinition Id="bb0d1575-f23a-4c65-94b4-b3ffb22cd61a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="6dc89dc7-2b1c-4cec-9355-196332c380ba" name="MakePackaging" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f8608ee3-ce88-4373-898d-09f8f347f386" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6110bd79-8414-4883-9ddb-cbed0aeee5d9" direction="Return" isUnique="false">
+                        <elementDefinition Id="d0aa25b8-7a77-40dc-96f4-e7975e905a93" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="9879998d-413a-432a-8bb7-855243ec3595" name="CalcTotalCostOfAssembly" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="94199df2-9d5c-4128-a827-68357df7bc86" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d227ffba-540d-4908-a42f-5a3601fab731" direction="Return" isUnique="false">
+                        <elementDefinition Id="bf12b8c8-356c-44ef-9f6a-1dcd161d53c4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b35856c1-d6df-4b8d-9018-ef5349cde28a" name="GetReport" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c577d8c0-4f71-4595-a3ad-4314fc636d2d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8193805d-a21f-4979-b469-fc42ba059108" direction="Return" isUnique="false">
+                        <elementDefinition Id="425ed24b-4d70-4b53-9a72-c447b5411cec" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="457cd2a7-150a-46e1-8d4f-9e178db5f216" LastKnownName="AssemblyReport" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0fbdc81e-bcef-4f6f-81e3-024ab9bcd7af" name="AssemblyDepartment" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0da4ae2e-bf30-489b-a13f-4af7732e2f26" />
+              <suppliersInternal>
+                <interfaceRealization Id="a15a634f-7ab6-4c6c-b644-de2e46fab9eb">
+                  <interfaceMoniker Id="4fcd413b-b9ce-4760-8aa1-6fab8f73cf36" LastKnownName="IAssemblyDepartment" />
+                  <elementDefinition Id="b07d1098-44e9-428d-be37-3b97f4904663" />
+                </interfaceRealization>
+                <dependency Id="80faa98b-05ad-49fa-b0e5-7598892d667e">
+                  <classMoniker Id="485d499c-7cfd-4cab-947f-db2c4aff559d" LastKnownName="AssemblyReport" />
+                  <elementDefinition Id="41728671-daa6-453b-97e6-a3df69a36ea9" />
+                </dependency>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="7ff82753-b49c-4c7c-b4ce-feb9e06c42c0" isDerived="false" sourceEndRoleName="AssemblyDepartment" targetEndRoleName="Lamination" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="e6e0f8ef-2be8-487b-ace0-a163216025a5" LastKnownName="Lamination" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="f4a94972-617a-40c1-b460-585ce057ff59" name="AssemblyDepartment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="7c17331d-891d-4b40-af4e-cc2c9d8eb659" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="468341eb-53f0-46b2-aa58-8b6f3084463e" name="Lamination" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="0799cd94-8873-4bf0-be7d-7e65bc8a1b58" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="14399cee-90dc-4b8e-b255-f793244cc515" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="85db0de6-6d6f-4597-9a66-5f2a11861dad" name="assemblyReport" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5ae190ce-7497-483c-b52d-76af584d5ffd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="457cd2a7-150a-46e1-8d4f-9e178db5f216" LastKnownName="AssemblyReport" />
+                  </type_NamedElement>
+                </property>
+                <property Id="ed75d487-062a-4ad1-b067-40cae00008ad" name="book" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4374b900-2f10-4d63-ad83-c94c7ce6f1b8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7f8be56b-d700-4d86-99c6-7dc16e4c3150" LastKnownName="Book" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="a9d365ab-27df-47d5-9c76-d3296f71db26" name="AssemblyDepartment" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="837de3be-2723-45c1-b358-1434bd14e21e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="32f5607a-df83-4e2b-99e3-6bb7567595dd" name="Book book" direction="In" isUnique="false">
+                        <elementDefinition Id="7042526a-2ba5-4249-ae5f-28385bed4ed4" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="13494162-f4ab-4f02-877e-7f273b390429" name="MakeBinding" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1e08a185-c817-4889-9910-50b96ef10ca0" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="751dcab0-7387-495e-958b-35470e9e287f" direction="Return" isUnique="false">
+                        <elementDefinition Id="17e55558-ed8a-48c5-84ae-542943b4c5c0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b4c566a6-dfcd-4c5c-8b3e-0d10e91a4d84" name="MakeLamination" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ba419fd5-1785-45b6-bbe9-e1e610409813" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="44ed8ec6-ff7d-43bf-a865-bb6aed605b77" direction="Return" isUnique="false">
+                        <elementDefinition Id="504acd34-3692-4f29-a7e8-a8aab44a9866" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="57b0380e-7eef-402c-8fa9-88cf8406c7ab" name="MakePackaging" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b39a22b8-1856-4abe-8171-3c6c196761ec" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="73f9052c-58a5-4c35-bfa8-098b64434bf4" direction="Return" isUnique="false">
+                        <elementDefinition Id="0fbbafe2-212a-4837-942f-ea5587585229" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="c86ba9ed-32fd-45fa-ae17-8ab4cc1933d2" name="MakePerforation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0124336d-6ab5-4352-bc61-f503a5954fe7" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="73847b70-e1d9-47cc-94e1-5e7a3fa45f1b" direction="Return" isUnique="false">
+                        <elementDefinition Id="1a06f53c-e6bd-46d1-bc56-c042b0635563" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="fa4bdc75-6594-4c1f-9f90-20c4857c53c0" name="CalcTotalCostOfAssembly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="29209f4d-e011-46f1-a0a3-f64514f8c763" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="10969dd9-0962-4528-87ee-665f48eea35a" direction="Return" isUnique="false">
+                        <elementDefinition Id="bac7fd5e-57cb-47dc-a4f9-8075393bf58c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="df002b4c-11eb-461f-84b9-87ed5cc7f77d" name="GetReport" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="cf649b2d-f6b7-4c39-980c-19438b8dddfc" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="65ff1b70-a0d6-4d1f-8fa0-a89b50da67c7" direction="Return" isUnique="false">
+                        <elementDefinition Id="88d940b1-05f0-4ac6-a3c7-297c2c0acb6c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="457cd2a7-150a-46e1-8d4f-9e178db5f216" LastKnownName="AssemblyReport" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="20d02e38-61fa-4cce-be88-bc6a32610353" name="AssemblyDirector" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1ab64223-3e6a-4943-b28b-b1b44b876da1" />
+              <targetEnds>
+                <association Id="6ffa96c5-af70-44c5-b812-27106e6ae142" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="4fcd413b-b9ce-4760-8aa1-6fab8f73cf36" LastKnownName="IAssemblyDepartment" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="607e467c-fc40-404d-a9b3-5f451f6e3fcf" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="8235650e-d924-4163-a9dc-aaaaf96f41c5" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="64579e19-e48b-43cc-8037-6ef4e3ad25fb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="9e417f06-791c-4f23-b14e-93312f623645" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="a525e3af-ff9a-40d9-898f-cfbdfa1545a2" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="bbedd96d-d9cf-4dd6-8860-0d3ce8e9b649" name="assemblyDepartment" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9cacec35-5690-4c3d-84c1-f23b8303d942" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7c151b4a-44f4-4c8a-b2cf-3ca09df39761" LastKnownName="IAssemblyDepartment" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="9687af4f-160a-4a05-849e-8e479ab8bd87" name="AssemblyDirector" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6a017432-c647-4b85-88dc-75fa942dc24d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="aa03611d-b9ba-40cb-ae02-4b1f8d91611f" name="IAssemblyDepartment assemblyDepartment" direction="In" isUnique="false">
+                        <elementDefinition Id="82301979-edbe-4b33-9cc8-53570d7545a7" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="e5b00098-a9f3-42f5-a5e9-99a99cad60b7" name="Assemble" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="74e669a9-58ac-4a37-a392-430d131f555b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="134d5815-72cc-4010-8566-ffef845114a9" direction="Return" isUnique="false">
+                        <elementDefinition Id="b6cb97a3-6f68-4871-899c-263258d7aea8" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="87d8ef8f-4fa4-45ef-8f3f-7ecebd006ee5" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="d93c3455-371c-4962-9b6d-b903eb45022f" name="PaperFormat" isAbstract="false" isLeaf="false" cachedFullName="PaperFormat">
+        <elementDefinition Id="c4b38e72-8b4b-4f9a-8b58-79431713e683" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8fafc947-80dd-49a8-9043-b78184dbcf51" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="2890fcf2-f6dc-43a6-beb8-a7e980c6b9c0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="11a380a7-67c5-40f2-a103-86cc492a3be0" name="LaminationType" isAbstract="false" isLeaf="false" cachedFullName="LaminationType">
+        <elementDefinition Id="7b767262-e726-4bf1-a0e9-dc87541a085e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="91581277-12ab-4b9c-bea5-79754c1ae111" name="TaskToLamination" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d84108d8-7ec7-486c-b923-86ca5ccbaebb" />
+        <ownedAttributesInternal>
+          <property Id="3059585b-f85b-42d8-8cce-36424039eb92" name="LaminationFormat" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="896f1f4a-20a0-43d2-a171-b7027ea617de" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d93c3455-371c-4962-9b6d-b903eb45022f" LastKnownName="PaperFormat" />
+            </type_NamedElement>
+          </property>
+          <property Id="6b3c030c-db05-48fd-9b7a-d3a96552e668" name="PrintRun" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8f3fa20-1312-48dc-a86d-b61aee242e81" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8fafc947-80dd-49a8-9043-b78184dbcf51" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="52dc4882-082e-41df-9edd-dc8b9ef64e71" name="LaminationType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="97f60f43-8d61-4e8c-ad5a-6f3bec97c9b8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="11a380a7-67c5-40f2-a103-86cc492a3be0" LastKnownName="LaminationType" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e0ea7906-41b9-4b03-9dd6-3abbebbceeaf" name="TaskToLamination" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="846ed509-d767-4f75-8636-f430a27ea700" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4c453d6c-1322-464a-8ba9-ccd627c8c0f4" name="IssueFormat _issueFormat" direction="In" isUnique="false">
+                  <elementDefinition Id="3d0e65ac-b958-4475-8bec-bcdf73e8dddf" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="745f4a9c-822b-4f33-951e-95a2dd645b32" name="LaminationType _laminationType" direction="In" isUnique="false">
+                  <elementDefinition Id="365cb90e-b196-4a22-a7ba-1fd8fab96469" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="58c554eb-f415-4562-b77c-fd611bb5281c" name="int _printRun" direction="In" isUnique="false">
+                  <elementDefinition Id="a58f0832-8180-43c3-b2f5-850521e5ea54" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e6e0f8ef-2be8-487b-ace0-a163216025a5" name="Lamination" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="88712fd6-3c9c-4a94-b172-b6819d432749" />
+        <suppliersInternal>
+          <interfaceRealization Id="579c03ee-e2cc-4125-8eab-096d4716edb0">
+            <interfaceMoniker Id="61fa71a4-1225-4d4d-9fe9-3506ff88b252" LastKnownName="ICalcCost" />
+            <elementDefinition Id="76439e82-653b-4ca0-9bb3-5e25bd86d9ef" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="219759bf-1cb7-4ce5-9293-f5a9b00930fc" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="91581277-12ab-4b9c-bea5-79754c1ae111" LastKnownName="TaskToLamination" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fbb95fb1-9bd7-4c69-83d4-7e76dc04d9e9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3a90e530-982b-4be5-ae1a-753dd057b835" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68300e01-8aa7-4372-a7b4-5f05abdc1d2c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="ea2ff5cd-841f-4f26-923c-3464df60001f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f502b5d7-ce4f-490d-b2a2-b24b4ea49fbd" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ff25be33-b65a-4c66-a24a-a49f92bfd239" name="TaskToLamination" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a10080bf-fb98-43e1-8a4e-3d47c8670ff3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b19c8f80-2ccd-4864-b758-6e40a701c86e" LastKnownName="TaskToLamination" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7ac3db41-5b33-40aa-8d15-2b43bd20ebee" name="CalcCost" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2c589c40-df42-4664-bc1d-f5af724e8470" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3ae699e4-8d15-45bb-9a25-0f7d9d43f59c" direction="Return" isUnique="false">
+                  <elementDefinition Id="d4c3635d-f2e1-4a35-91d2-b9bc1dc6d1c5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="25fbb049-7495-464d-ba50-47ca4df4a753" name="Lamination" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d3cea92c-d649-4b69-be6c-a772e5c387ba" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a8ba51a9-97d2-401e-83e2-8588ff6ed7cd" name="TaskToLamination _tastToLamination" direction="In" isUnique="false">
+                  <elementDefinition Id="6e500158-4ce9-47ce-b754-63106588bf5d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="b19c8f80-2ccd-4864-b758-6e40a701c86e" name="TaskToLamination" isAbstract="false" isLeaf="false" cachedFullName="UML_BookProduction::TaskToLamination">
+        <elementDefinition Id="f204a336-368f-47e3-8212-1243434beb89" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="61fa71a4-1225-4d4d-9fe9-3506ff88b252" name="ICalcCost" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf064873-8016-43e6-9013-ae43dd3ea8a5" />
+        <ownedOperations>
+          <operation Id="17fd6056-61fa-49e2-be16-0d248d62c52e" name="CalcCost" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b0c8957c-dcbc-42f0-bcff-6a8c2fc669f1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="31578275-4477-42e4-a4e8-158b2b4b82b7" direction="Return" isUnique="false">
+                  <elementDefinition Id="db518b58-1ebc-411b-8a4f-39f79915228c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2c56dad4-1384-44a2-ab8c-7a18beb7d2d4" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="5ef66ac5-0b09-49d9-a5dc-8450446318b6" name="UML_BookProduction">
+    <elementDefinition Id="212157fd-2e6c-4f80-b998-6a7c158f727e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="64bb6ef2-6b98-43c5-b531-f4a23e90295c">
+        <profileInstance Id="6e8804a3-78de-4ec3-a6c6-182fc416f635" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="31d332c5-480e-4827-9f13-c4e917952fbf">
+        <profileInstance Id="a154980e-4fdd-4ce4-b165-8d38e54451b3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

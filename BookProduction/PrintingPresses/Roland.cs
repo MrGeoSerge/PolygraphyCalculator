@@ -2,8 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using BookProduction;
+using BookProduction.BookComponents;
+using BookProduction.Assembly;
+using BookProduction.IssueParams;
+using BookProduction.Paper;
+using BookProduction.PriceLists;
+using BookProduction.PrintingPresses;
+using BookProduction.Tasks;
+using BookProduction.TypographyManagement;
 
-namespace BookProduction
+namespace BookProduction.PrintingPresses
 {
     public class Roland : AbstractPrintingPress
     {

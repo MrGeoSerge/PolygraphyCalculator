@@ -3,14 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BookProduction;
+using BookProduction.BookComponents;
+using BookProduction.Assembly;
+using BookProduction.IssueParams;
+using BookProduction.Paper;
+using BookProduction.PriceLists;
+using BookProduction.PrintingPresses;
+using BookProduction.Tasks;
+using BookProduction.TypographyManagement;
 
-
-namespace BookProduction
+namespace BookProduction.TypographyManagement
 {
     //Директор типографии раздает задания (- формирует Task-и) на печатные машины и другие виды работ
     public class DirectorOfTypography
     {
         Book book;
+        AssemblyReport assemblyReport;
 
         public DirectorOfTypography(Book book)
         {
@@ -32,14 +41,20 @@ namespace BookProduction
             {
                 pressReports.Add(PrintBookPart(taskToPrint));
             }
-
-            foreach (PressReport pressReport in pressReports)
-            {
-                pressReport.ShowDetailedReport();
-            }
-
+            AssembleBook();
             //записываем все затраты обратно в книгу и собираем (assemble) книгу
-            return new BookCostOfPolygraphy(book, AssembleBook(), pressReports);
+            return new BookCostOfPolygraphy(book, assemblyReport, pressReports);
+        }
+
+        //реализация паттерна Строитель
+        //сборка книги
+        public void AssembleBook()
+        {
+            IAssemblyDepartment assemblyDepartment = new AssemblyDepartment(book);
+            AssemblyDirector assemblyDirector = new AssemblyDirector(assemblyDepartment);
+            assemblyDirector.Assemble();
+            assemblyReport = assemblyDepartment.GetReport();
+            assemblyReport.ShowDetailedReport();
         }
 
 
@@ -98,81 +113,5 @@ namespace BookProduction
 
 
 
-        //cобрать книгу
-        private AssemblyReport AssembleBook()
-        {
-            AssemblyReport assemblyReport = new AssemblyReport();
-
-            //Переплет
-            TaskToBind taskToBind = new TaskToBind(book.BookParts[0].Format, book.BookParts[0].PagesNumber, book.PrintRun);
-            assemblyReport.AddCostOfBinding(MakeBinding(taskToBind));
-
-            //Перфорация
-            if (book.BookAssembly.Perforation != 0)
-            {
-                TaskToPerforation taskToPerforation = new TaskToPerforation(book.BookAssembly.Perforation, book.PrintRun,
-                    book.BookAssembly.BindingType, book.BookParts[0].PagesNumber);
-                assemblyReport.AddCostOfPerforation(MakePerforation(taskToPerforation));
-            }
-
-            //Ламинация 
-            TaskToLamination taskToLamination = new TaskToLamination(book.BookParts[0].Format, book.BookAssembly.LaminationType, book.PrintRun);
-            assemblyReport.AddCostOfLamination(MakeLamination(taskToLamination));
-
-            //Упаковка
-            TaskToPackage taskToPackage = new TaskToPackage(book.BookAssembly.BindingType, book.PrintRun);
-            assemblyReport.AddCostOfPackaging(MakePackaging(taskToPackage));
-
-            assemblyReport.CalcTotalCostOfAssembly();
-            //assemblyReport.ShowDetailedReport();
-
-            return assemblyReport;
-        }
-
-
-
-        //сделать переплет
-        private double MakeBinding(TaskToBind _taskToBind)
-        {
-            Binding binding = null;
-            switch (book.BookAssembly.BindingType)
-            {
-                case BindingType.PerfectBinding:
-                    binding = new Perfect(_taskToBind);
-                    break;
-
-                case BindingType.SaddleStitching:
-                    binding = new SaddleStitching(_taskToBind);
-                    break;
-
-                case BindingType.HardcoverBinding:
-                    binding = new HardCover(_taskToBind);
-                    break;
-                default:
-                    throw new Exception("неправильно указан переплет");
-            }
-
-            return binding.CalcCostOfBinding();
-        }
-
-        //сделать перфорацию
-        private double MakePerforation(TaskToPerforation _taskToPerforation)
-        {
-            Perforation perforation = new Perforation(_taskToPerforation);
-            return perforation.CalcCostOfPerforation();
-        }
-
-        //сделать ламинацию
-        private double MakeLamination(TaskToLamination _taskToLamination)
-        {
-            return new Lamination(_taskToLamination).CalcCostOfLamination();
-        }
-
-        //сделать упаковку
-        private double MakePackaging(TaskToPackage _taskToPackage)
-        {
-            Packaging packaging = new Packaging(_taskToPackage);
-            return packaging.CalcCostOfPackaging();
-        }
     }
 }

@@ -7,3 +7,4 @@ D:\Dropbox\C#\BookProduction2017\BookProduction\bin\Debug\Microsoft.VisualStudio
 D:\Dropbox\C#\BookProduction2017\BookProduction\bin\Debug\BookProduction.dll.config
 D:\Dropbox\C#\BookProduction2017\BookProduction\bin\Debug\BookProduction.dll
 D:\Dropbox\C#\BookProduction2017\BookProduction\obj\Debug\BookProduction.dll
+D:\Dropbox\C#\BookProduction2017\BookProduction\obj\Debug\BookProduction.csprojResolveAssemblyReference.cache

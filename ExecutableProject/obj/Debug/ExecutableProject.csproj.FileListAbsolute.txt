@@ -4,6 +4,6 @@ D:\Dropbox\C#\BookProduction2017\ExecutableProject\bin\Debug\ExecutableProject.p
 D:\Dropbox\C#\BookProduction2017\ExecutableProject\bin\Debug\BookProduction.dll
 D:\Dropbox\C#\BookProduction2017\ExecutableProject\bin\Debug\nunit.framework.dll
 D:\Dropbox\C#\BookProduction2017\ExecutableProject\bin\Debug\BookProduction.pdb
-D:\Dropbox\C#\BookProduction2017\ExecutableProject\obj\Debug\ExecutableProject.csprojResolveAssemblyReference.cache
 D:\Dropbox\C#\BookProduction2017\ExecutableProject\obj\Debug\ExecutableProject.exe
 D:\Dropbox\C#\BookProduction2017\ExecutableProject\obj\Debug\ExecutableProject.pdb
+D:\Dropbox\C#\BookProduction2017\ExecutableProject\obj\Debug\ExecutableProject.csprojResolveAssemblyReference.cache

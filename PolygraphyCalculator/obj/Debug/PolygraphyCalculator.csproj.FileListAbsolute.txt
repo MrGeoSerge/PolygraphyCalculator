@@ -77,12 +77,9 @@ D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\bin\Microsoft.Owin.Securit
 D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\bin\Microsoft.Owin.Security.Google.xml
 D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\obj\Debug\PolygraphyCalculator.csprojResolveAssemblyReference.cache
 D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\obj\Debug\PolygraphyCalculator.dll
 D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\obj\Debug\PolygraphyCalculator.pdb
 D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\bin\BookProduction.dll
-D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\bin\nunit.framework.dll
-D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\bin\BookProduction.pdb
 D:\Dropbox\C#\BookProduction2017 - копия(16)\PolygraphyCalculator\bin\ApplicationInsights.config
 D:\Dropbox\C#\BookProduction2017 - копия(16)\PolygraphyCalculator\bin\roslyn\csc.exe
 D:\Dropbox\C#\BookProduction2017 - копия(16)\PolygraphyCalculator\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -170,5 +167,6 @@ D:\Dropbox\C#\BookProduction2017 - копия(16)\PolygraphyCalculator\obj\Debug
 D:\Dropbox\C#\BookProduction2017 - копия(16)\PolygraphyCalculator\obj\Debug\PolygraphyCalculator.pdb
 D:\Dropbox\C#\BookProduction2017 - копия(16)\PolygraphyCalculator\obj\Debug\PolygraphyCalculator.PolygraphyParams.resources
 D:\Dropbox\C#\BookProduction2017 - копия(16)\PolygraphyCalculator\obj\Debug\PolygraphyCalculator.csproj.GenerateResource.Cache
-D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\obj\Debug\PolygraphyCalculator.PolygraphyParams.resources
-D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\obj\Debug\PolygraphyCalculator.csproj.GenerateResource.Cache
+D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\bin\nunit.framework.dll
+D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\bin\BookProduction.pdb
+D:\Dropbox\C#\BookProduction2017\PolygraphyCalculator\obj\Debug\PolygraphyCalculator.csprojResolveAssemblyReference.cache

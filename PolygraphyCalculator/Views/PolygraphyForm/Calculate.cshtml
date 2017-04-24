@@ -1,6 +1,7 @@
 ﻿@model BookProduction.BookModel
 @using PolygraphyCalculator.Models;
 <div class="container">
+    @*@using (Ajax.BeginForm(new AjaxOptions { Url = Url.Action("Calculations"), UpdateTargetId = "tabledata" }))*@
     @using (Html.BeginForm("Calculate", "PolygraphyForm", FormMethod.Post, new { @class = "form-horizontal" }))
     {
         <div class="row">
@@ -21,15 +22,15 @@
             <div class="form-group col-md-4">
                 <label for="pagesNumber" class="control-label col-md-8">Количество страниц</label>
                 <div class="col-md-4">
-                    @Html.TextBoxFor(m => m.PagesNumber, new { @class = "form-control", id = "pagesNumber", placeholder = "стр." })
-                    @Html.ValidationMessageFor(m => m.PagesNumber)
+                    @Html.TextBoxFor(m => m.PagesNumber, new { @class = "form-control", id = "pagesNumber", value = "160" })
+                    @*@Html.ValidationMessageFor(m => m.PagesNumber)*@
                 </div>
             </div>
             <div class="form-group col-md-3">
                 <label for="printRun" class="control-label col-md-5">Тираж</label>
                 <div class="col-md-7">
-                    @Html.TextBoxFor(m => m.PrintRun, new { @class = "form-control", id = "printRun", placeholder = "тираж" })
-                    @Html.ValidationMessageFor(m=>m.PrintRun)
+                    @Html.TextBoxFor(m => m.PrintRun, new { @class = "form-control", id = "printRun", value = "1000" })
+                    @*@Html.ValidationMessageFor(m => m.PrintRun)*@
                 </div>
             </div>
         </div>
@@ -89,7 +90,7 @@
                 <div class="col-md-6">
                     <div class="radio">
                         <label>
-                            @Html.RadioButtonFor(m => m.Binding, BookProduction.BindingType.SaddleStitching, new { @checked = "checked"} )
+                            @Html.RadioButtonFor(m => m.Binding, BookProduction.BindingType.SaddleStitching, new { @checked = "checked" })
                             Скоба
                         </label>
                     </div>
@@ -135,14 +136,32 @@
     }
 
     @if (ViewBag.Report != null)
-    {
-        <div>
-            <h3>Расходы на тиражирование</h3>
-            Затраты на полиграфию: @ViewBag.Report.CostOfPolygraphy грн<br>
-            Затраты на материалы: @ViewBag.Report.CostOfMaterials грн<br>
-            Затраты на сборку: @ViewBag.Report.CostOfAssembly грн<br>
-            Затраты на тираж: @ViewBag.Report.CostOfPrintRun грн<br>
-            <b>Затраты на 1 экземпляр: @ViewBag.Report.CostOfPolygraphyPerOneItem грн</b><br>
-        </div>
+    {<div id="tabledata">
+        @Html.Action("Calculations", @Model)
+    </div>
+
+
     }
+
+
+    @*@Html.Partial("Calculations")*@
+    @*@if (ViewBag.Report != null)
+        {
+            <div id="calcResults">
+                <h3>Расходы на тиражирование</h3>
+                Затраты на полиграфию: @ViewBag.Report.CostOfPolygraphy грн<br>
+                Затраты на материалы: @ViewBag.Report.CostOfMaterials грн<br>
+                Затраты на сборку: @ViewBag.Report.CostOfAssembly грн<br>
+                Затраты на тираж: @ViewBag.Report.CostOfPrintRun грн<br>
+                <b>Затраты на 1 экземпляр: @ViewBag.Report.CostOfPolygraphyPerOneItem грн</b><br>
+            </div>
+        }*@
+
+    @section scripts
+{
+        @*Ненавязивый JavaScript для выполнения запроса на сервер без полного обновления страницы*@
+        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    }
+
+    @Html.ActionLink("Прайс печатных машин", "PressesPriceList", "PriceUpdate")
 </div>

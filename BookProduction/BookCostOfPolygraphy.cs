@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BookProduction;
+using BookProduction.BookComponents;
+using BookProduction.Assembly;
+using BookProduction.IssueParams;
+using BookProduction.Paper;
+using BookProduction.PriceLists;
+using BookProduction.PrintingPresses;
+using BookProduction.Tasks;
+using BookProduction.TypographyManagement;
 
 namespace BookProduction
 {
@@ -33,7 +42,7 @@ namespace BookProduction
             book = _book;
             CostOfPolygraphy = innerBlock.GetCostOfPolygraphy() + cover.GetCostOfPolygraphy();
             CostOfMaterials = innerBlock.GetPaperCost() + cover.GetPaperCost();
-            CostOfAssembly = assembly.totalCostOfAssembly;
+            CostOfAssembly = assembly.TotalCostOfAssembly;
 
             CostOfPrintRun = CostOfPolygraphy + CostOfMaterials + CostOfAssembly;
             CostOfPolygraphyPerOneItem = Math.Round(CostOfPrintRun / book.PrintRun, 4);
@@ -51,7 +60,7 @@ namespace BookProduction
                 CostOfMaterials += pressReport.GetPaperCost();
             }
 
-            CostOfAssembly = assembly.totalCostOfAssembly;
+            CostOfAssembly = assembly.TotalCostOfAssembly;
 
             CostOfPrintRun = CostOfPolygraphy + CostOfMaterials + CostOfAssembly;
             CostOfPolygraphyPerOneItem = Math.Round(CostOfPrintRun / book.PrintRun, 4);

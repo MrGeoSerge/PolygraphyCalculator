@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BookProduction;
+using BookProduction.Paper;
+using BookProduction.IssueParams;
+using BookProduction.BookComponents;
+using BookProduction.TypographyManagement;
+using BookProduction.PriceLists;
 
 namespace ExecutableProject
 {
@@ -75,39 +80,36 @@ namespace ExecutableProject
             //BookCostOfPolygraphy report = director.MakeBook();
             //Console.WriteLine(report.CostReport());
 
-            //Book Igry = new Book("ДТБ021", "Ігри і казки, які лікують. Книга 2", 3000,
-            //    new BookPart("InnerBlock", new IssueFormat(70, 100, 16), offset70_100_D80, new IssueColors(4, 4), 176),
-            //    new BookPart("Cover", new IssueFormat(70, 100, 16), celluloseCardboard250, new IssueColors(4, 0), 4),
-            //    new BookAssembly(BindingType.PerfectBinding, LaminationType.Glossy, true));
-
-
-            //Console.WriteLine(Igry);
-
-            //DirectorOfTypography director = new DirectorOfTypography(Igry);
-            //BookCostOfPolygraphy report = director.MakeBook();
-            //Console.WriteLine(report.CostReport());
-
-            Book SvitMatematyky = new Book("КДШ001", "Пізнаю світ математики", 5000,
-                new BookPart("InnerBlock", new IssueFormat(84, 108, 16), offset84_D60, new IssueColors(2, 2), 56),
-                new BookPart("Cover", new IssueFormat(84, 108, 16), hrom_erzats230, new IssueColors(4, 1), 4),
-                new BookPart("Nakleyki", new IssueFormat(84, 108, 16), samokleyka, new IssueColors(4, 0), 2),
+            Book Igry = new Book("ДТБ021", "Ігри і казки, які лікують. Книга 2", 3000,
+                new BookPart("InnerBlock", new IssueFormat(70, 100, 16), offset70_100_D80, new IssueColors(4, 4), 176),
+                new BookPart("Cover", new IssueFormat(70, 100, 16), celluloseCardboard250, new IssueColors(4, 0), 4),
                 new BookAssembly(BindingType.PerfectBinding, LaminationType.Glossy, true));
 
-            BookModel tryBook = new BookModel(SvitMatematyky);
 
-            Book try2Book = new Book(tryBook);
+            Console.WriteLine(Igry);
 
-
-
-
-
-            Console.WriteLine(try2Book);
-
-            DirectorOfTypography director = new DirectorOfTypography(try2Book);
+            DirectorOfTypography director = new DirectorOfTypography(Igry);
             BookCostOfPolygraphy report = director.MakeBook();
             Console.WriteLine(report.CostReport());
 
+            #region Тетрадь со вкладкой
+            //Book SvitMatematyky = new Book("КДШ001", "Пізнаю світ математики", 5000,
+            //    new BookPart("InnerBlock", new IssueFormat(84, 108, 16), offset84_D60, new IssueColors(2, 2), 56),
+            //    new BookPart("Cover", new IssueFormat(84, 108, 16), hrom_erzats230, new IssueColors(4, 1), 4),
+            //    new BookPart("Nakleyki", new IssueFormat(84, 108, 16), samokleyka, new IssueColors(4, 0), 2),
+            //    new BookAssembly(BindingType.PerfectBinding, LaminationType.Glossy, true));
 
+            //BookModel tryBook = new BookModel(SvitMatematyky);
+
+            //Book try2Book = new Book(tryBook);
+
+            //Console.WriteLine(try2Book);
+
+            //DirectorOfTypography director = new DirectorOfTypography(try2Book);
+            //BookCostOfPolygraphy report = director.MakeBook();
+            //Console.WriteLine(report.CostReport());
+
+            #endregion
 
 
 
@@ -139,11 +141,20 @@ namespace ExecutableProject
             //       new IssueColors(4, 1), 4),
             //    new BookAssembly(BindingType.SaddleStitching, LaminationType.Glossy, true, PerforationType.usual));
 
-            ////director = new DirectorOfTypography(theBook);
-            ////report = director.MakeBook();
             //DirectorOfTypography director = new DirectorOfTypography(MkBook);
-            //BookCostOfPolygraphy report =  director.MakeBook();
+            //BookCostOfPolygraphy report = director.MakeBook();
             //Console.WriteLine(report.CostReport());
+
+            #region запись результатов в файл
+            //ZirkonPressPriceList.WriteToFile();
+            //Console.WriteLine(ZirkonPressPriceList.Form);
+            //Console.WriteLine(ZirkonPressPriceList.Fitting);
+            //Console.WriteLine(ZirkonPressPriceList.Impression["1+1"]);
+            //Console.WriteLine(ZirkonPressPriceList.Impression["2+2"]);
+            //Console.WriteLine(ZirkonPressPriceList.TechNeeds["1+1"]);
+            //Console.WriteLine(ZirkonPressPriceList.TechNeeds["2+2"]);
+            #endregion
+
 
         }
     }
