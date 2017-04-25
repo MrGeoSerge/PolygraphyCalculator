@@ -1,47 +1,53 @@
 ﻿<div class="container">
-    <h2>Прайсы печатных машин</h2>
-    <h3>Прайс печатной машины Циркон</h3>
-
-    @using (Ajax.BeginForm("ZirkonUpdatePrice",new {ID =""},
-                               new AjaxOptions()
-                               {
-                                   UpdateTargetId = "zirkonPL",
-                                   Url = Url.Action("ZirkonUpdatePrice")
-                               },new { @class = "form-horizontal" }))
+    @Html.ActionLink("Назад к калькулятору", "Calculate","PolygraphyForm")
+    <h2 class="text-center">Прайсы печатных машин</h2>
+    @using (Ajax.BeginForm("ZirkonUpdatePrice", new { ID = "" },
+           new AjaxOptions()
+           {
+               UpdateTargetId = "zirkonPL",
+               Url = Url.Action("ZirkonUpdatePrice")
+           }, new { @class = "form-horizontal prices-updates" }))
     {
+        <h3 class="text-center">Прайс печатной машины Циркон</h3>
         <div id="zirkonPL">
             @Html.Action("ZirkonUpdatePrice")
         </div>
-        <input type="submit" value="Обновить прайс" />
+        <div class="text-center">
+            <input type="submit" value="Обновить прайс" class="btn btn-success" />
+        </div>
     }
     <hr />
-    <h3>Прайс печатной машины Коросет</h3>
 
-    @using (Ajax.BeginForm(
-                               new AjaxOptions()
-                               {
-                                   UpdateTargetId = "corosetPL",
-                                   Url = Url.Action("CorosetUpdatePrice")
-                               }))
+    @using (Ajax.BeginForm("CorosetUpdatePrice", new { ID = "" },
+            new AjaxOptions()
+            {
+                UpdateTargetId = "corosetPL",
+                Url = Url.Action("CorosetUpdatePrice")
+            }, new { @class = "form-horizontal prices-updates" }))
     {
+        <h3 class="text-center">Прайс печатной машины Коросет</h3>
         <div id="corosetPL">
             @Html.Action("CorosetUpdatePrice")
         </div>
-        <input type="submit" value="Обновить прайс" />
+        <div class="text-center">
+            <input type="submit" value="Обновить прайс" class="btn btn-success" />
+        </div>
     }
     <hr />
-    <h3>Прайс печатной машины Рапида</h3>
-    @using (Ajax.BeginForm(
-                               new AjaxOptions()
-                               {
-                                   UpdateTargetId = "rapidaPL",
-                                   Url = Url.Action("RapidaUpdatePrice")
-                               }))
+    @using (Ajax.BeginForm("RapidaUpdatePrice", new { ID = "" },
+           new AjaxOptions()
+           {
+               UpdateTargetId = "rapidaPL",
+               Url = Url.Action("RapidaUpdatePrice")
+           }, new { @class = "form-horizontal prices-updates" }))
     {
+        <h3 class="text-center">Прайс печатной машины Рапида</h3>
         <div id="rapidaPL">
             @Html.Action("RapidaUpdatePrice")
         </div>
-        <input type="submit" value="Обновить прайс" />
+        <div class="text-center">
+            <input type="submit" value="Обновить прайс" class="btn btn-success" />
+        </div>
     }
 
 

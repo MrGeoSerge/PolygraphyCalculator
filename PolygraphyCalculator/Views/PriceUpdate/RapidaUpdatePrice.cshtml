@@ -1,81 +1,137 @@
 ﻿@model PolygraphyCalculator.Models.RapidaPriceModel
 
-<div>
-    @Html.LabelFor(x=>x.Form)
-    @Html.EditorFor(x=>x.Form)
-    @Html.ValidationMessageFor(x=>x.Form)
+<div class="form-group">
+    @Html.LabelFor(x => x.Form, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.Form, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.Form)
+    </div>
+</div>
+<hr />
+<h4 class="text-center">Приладка на весь тираж, в листах формата оборудования</h4>
+<div class="form-group">
+    @Html.LabelFor(x => x.Fitting4_0, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.Fitting4_0, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.Fitting4_0)
+    </div>
 </div>
 
-<div>
-    @Html.LabelFor(x => x.Fitting4_0)
-    @Html.EditorFor(x => x.Fitting4_0)
-    @Html.ValidationMessageFor(x => x.Fitting4_0)
+<div class="form-group">
+    @Html.LabelFor(x => x.Fitting4_1, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.Fitting4_1, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.Fitting4_1)
+    </div>
 </div>
 
-<div>
-    @Html.LabelFor(x => x.Fitting4_1)
-    @Html.EditorFor(x => x.Fitting4_1)
-    @Html.ValidationMessageFor(x => x.Fitting4_1)
+<div class="form-group">
+    @Html.LabelFor(x => x.Fitting2_2, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.Fitting2_2, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.Fitting2_2)
+    </div>
 </div>
 
-<div>
-    @Html.LabelFor(x => x.Fitting2_2)
-    @Html.EditorFor(x => x.Fitting2_2)
-    @Html.ValidationMessageFor(x => x.Fitting2_2)
+<div class="form-group">
+    @Html.LabelFor(x => x.Fitting4_2, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.Fitting4_2, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.Fitting4_2)
+    </div>
 </div>
 
-<div>
-    @Html.LabelFor(x => x.Fitting4_2)
-    @Html.EditorFor(x => x.Fitting4_2)
-    @Html.ValidationMessageFor(x => x.Fitting4_2)
+<div class="form-group">
+    @Html.LabelFor(x => x.Fitting4_4, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.Fitting4_4, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.Fitting4_4)
+    </div>
+</div>
+<hr />
+<h4 class="text-center">Технужды при тираже листов формата оборудования</h4>
+
+<div class="form-group">
+    @Html.LabelFor(x => x.TechNeedsLT2999, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.TechNeedsLT2999, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.TechNeedsLT2999)
+    </div>
 </div>
 
-<div>
-    @Html.LabelFor(x => x.Fitting4_4)
-    @Html.EditorFor(x => x.Fitting4_4)
-    @Html.ValidationMessageFor(x => x.Fitting4_4)
+<div class="form-group">
+    @Html.LabelFor(x => x.TechNeedsGT2999, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.TechNeedsGT2999, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.TechNeedsGT2999)
+    </div>
+</div>
+<hr />
+<h4 class="text-center">Стоимость оттисков при тираже листов формата оборудования</h4>
+<div class="form-group">
+    @Html.LabelFor(x => x.ImpressionLT999, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.ImpressionLT999, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.ImpressionLT999)
+    </div>
 </div>
 
-<div>
-    @Html.LabelFor(x => x.TechNeedsLT2999)
-    @Html.EditorFor(x => x.TechNeedsLT2999)
-    @Html.ValidationMessageFor(x => x.TechNeedsLT2999)
+<div class="form-group">
+    @Html.LabelFor(x => x.ImpressionLT2999, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.ImpressionLT2999, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.ImpressionLT2999)
+    </div>
 </div>
 
-<div>
-    @Html.LabelFor(x => x.TechNeedsGT2999)
-    @Html.EditorFor(x => x.TechNeedsGT2999)
-    @Html.ValidationMessageFor(x => x.TechNeedsGT2999)
+<div class="form-group">
+    @Html.LabelFor(x => x.ImpressionLT4999, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.ImpressionLT4999, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.ImpressionLT4999)
+    </div>
 </div>
 
-<div>
-    @Html.LabelFor(x => x.ImpressionLT999)
-    @Html.EditorFor(x => x.ImpressionLT999)
-    @Html.ValidationMessageFor(x => x.ImpressionLT999)
+<div class="form-group">
+    @Html.LabelFor(x => x.ImpressionLT9999, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.ImpressionLT9999, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.ImpressionLT9999)
+    </div>
 </div>
 
-<div>
-    @Html.LabelFor(x => x.ImpressionLT2999)
-    @Html.EditorFor(x => x.ImpressionLT2999)
-    @Html.ValidationMessageFor(x => x.ImpressionLT2999)
-</div>
-
-<div>
-    @Html.LabelFor(x => x.ImpressionLT4999)
-    @Html.EditorFor(x => x.ImpressionLT4999)
-    @Html.ValidationMessageFor(x => x.ImpressionLT4999)
-</div>
-
-<div>
-    @Html.LabelFor(x => x.ImpressionLT9999)
-    @Html.EditorFor(x => x.ImpressionLT9999)
-    @Html.ValidationMessageFor(x => x.ImpressionLT9999)
-</div>
-
-<div>
-    @Html.LabelFor(x => x.ImpressionGT9999)
-    @Html.EditorFor(x => x.ImpressionGT9999)
-    @Html.ValidationMessageFor(x => x.ImpressionGT9999)
+<div class="form-group">
+    @Html.LabelFor(x => x.ImpressionGT9999, new { @class = "col-md-6 control-label" })
+    <div class="col-md-2">
+        @Html.TextBoxFor(x => x.ImpressionGT9999, new { @class = "form-control" })
+    </div>
+    <div class="text-danger col-md-4 small">
+        @Html.ValidationMessageFor(x => x.ImpressionGT9999)
+    </div>
 </div>
 
 

@@ -41,6 +41,11 @@ namespace BookProduction.TypographyManagement
             {
                 pressReports.Add(PrintBookPart(taskToPrint));
             }
+
+            foreach(var pressReport in pressReports)
+            {
+                pressReport.ShowDetailedReport();
+            }
             AssembleBook();
             //записываем все затраты обратно в книгу и собираем (assemble) книгу
             return new BookCostOfPolygraphy(book, assemblyReport, pressReports);
@@ -104,6 +109,10 @@ namespace BookProduction.TypographyManagement
                 printingPress = new Rapida74_5(_taskForPart);
             }
 
+            else if(_taskForPart.Colors.ToString() == "0+0")
+            {
+                printingPress = new ZeroColorPress(_taskForPart);
+            }
             else
                 throw new Exception("не нашли подходящий станок для печати" + _taskForPart);
 

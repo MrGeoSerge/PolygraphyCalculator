@@ -65,6 +65,23 @@ namespace BookProduction
             BookAssembly = assembly;
         }
 
+        //конструктор для твердого переплета: обложка, внутренний блок, форзац, переплетный картон и переплет
+        public Book(string id, string name, int printRun, BookPart innerBlock, 
+            BookPart cover, BookPart forzats, BookPart cardboard,BookAssembly assembly)
+        {
+            BookParts = new List<BookPart>();
+
+            Name = name;
+            Id = id;
+            PrintRun = printRun;
+
+            BookParts.Add(innerBlock);
+            BookParts.Add(cover);
+            BookParts.Add(forzats);
+            BookParts.Add(cardboard);
+
+            BookAssembly = assembly;
+        }
 
         public Book()
         {

@@ -165,6 +165,7 @@ namespace BookProduction.PrintingPresses
             Console.WriteLine("Стоимость оттисков: " + press.GetCostOfImpressions());
             Console.WriteLine("Общая сумма за печать: " + GetCostOfPolygraphy());
             Console.WriteLine("Всего затрат: " + GetTotalCost());
+            Console.WriteLine("");
         }
     }
 }

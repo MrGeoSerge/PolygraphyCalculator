@@ -24,10 +24,14 @@ textarea {
 }*/
 
 
-form{
-            width: 850px;
-            margin: 0px auto;
-            border: 1px solid grey;
-            padding: 20px;
+form.prices-updates{
+    max-width: 850px;
+    margin: 0px auto;
+    border: 1px dashed darkblue;
+    padding: 20px;
+    border-radius: 7px;
+}
 
+input{
+    margin: 0px auto;
 }

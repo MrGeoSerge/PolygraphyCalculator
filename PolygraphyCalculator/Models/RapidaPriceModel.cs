@@ -16,62 +16,62 @@ namespace PolygraphyCalculator.Models
         [Range(typeof(double), "108", "200", ErrorMessage = "Стоимость формы в пределах 108-200 грн")]
         public double Form { get; set; }
 
-        [Display(Name = "Приладка на весь тираж, в листах формата оборудования. Цветность 4+0")]
+        [Display(Name = "Цветность 4+0")]
         [Required(ErrorMessage = "Введите количество листов приладки")]
         [Range(300, 500, ErrorMessage = "Количество листов приладки в пределах 300-500")]
         public double Fitting4_0 { get; set; }
 
-        [Display(Name = "Приладка на весь тираж, в листах формата оборудования. Цветность 4+1")]
+        [Display(Name = "Цветность 4+1")]
         [Required(ErrorMessage = "Введите количество листов приладки")]
         [Range(300, 500, ErrorMessage = "Количество листов приладки в пределах 300-500")]
         public double Fitting4_1 { get; set; }
 
-        [Display(Name = "Приладка на весь тираж, в листах формата оборудования. Цветность 2+2")]
+        [Display(Name = "Цветность 2+2")]
         [Required(ErrorMessage = "Введите количество листов приладки")]
         [Range(300, 500, ErrorMessage = "Количество листов приладки в пределах 300-500")]
         public double Fitting2_2 { get; set; }
 
-        [Display(Name = "Приладка на весь тираж, в листах формата оборудования. Цветность 4+2")]
+        [Display(Name = "Цветность 4+2")]
         [Required(ErrorMessage = "Введите количество листов приладки")]
         [Range(350, 500, ErrorMessage = "Количество листов приладки в пределах 350-500")]
         public double Fitting4_2 { get; set; }
 
-        [Display(Name = "Приладка на весь тираж, в листах формата оборудования. Цветность 4+4")]
+        [Display(Name = "Цветность 4+4")]
         [Required(ErrorMessage = "Введите количество листов приладки")]
         [Range(350, 500, ErrorMessage = "Количество листов приладки в пределах 350-500")]
         public double Fitting4_4 { get; set; }
 
-        [Display(Name = "Технужды при тираже до 3000, %")]
+        [Display(Name = "до 3000, %")]
         [Required(ErrorMessage = "Введите процент технужд")]
         [Range(0.0, 2.0, ErrorMessage = "Процент технужд в пределах 0-2%")]
         public double TechNeedsLT2999 { get; set; }
 
-        [Display(Name = "Технужды при тираже от 3000, %")]
+        [Display(Name = "от 3000, %")]
         [Required(ErrorMessage = "Введите процент технужд")]
         [Range(8.0, 10.0, ErrorMessage = "Процент технужд в пределах 8-10%")]
         public double TechNeedsGT2999 { get; set; }
 
-        [Display(Name = "Стоимость оттисков при тираже листов формата оборудования от 0 до 999, грн")]
+        [Display(Name = "до 999, грн")]
         [Required(ErrorMessage = "Введите стоимость оттисков")]
         [Range(0.132, 0.4, ErrorMessage = "Стоимость оттисков в пределах 0,132-0,4")]
         public double ImpressionLT999 { get; set; }
 
-        [Display(Name = "Стоимость оттисков при тираже листов формата оборудования от 1000 до 2999, грн")]
+        [Display(Name = "от 1000 до 2999, грн")]
         [Required(ErrorMessage = "Введите стоимость оттисков")]
         [Range(0.059, 0.3, ErrorMessage = "Стоимость оттисков в пределах 0,059-0,3")]
         public double ImpressionLT2999 { get; set; }
 
-        [Display(Name = "Стоимость оттисков при тираже листов формата оборудования от 3000 до 4999, грн")]
+        [Display(Name = "от 3000 до 4999, грн")]
         [Required(ErrorMessage = "Введите стоимость оттисков")]
         [Range(0.050, 0.3, ErrorMessage = "Стоимость оттисков в пределах 0,050-0,3")]
         public double ImpressionLT4999 { get; set; }
 
-        [Display(Name = "Стоимость оттисков при тираже листов формата оборудования от 5000 до 9999, грн")]
+        [Display(Name = "от 5000 до 9999, грн")]
         [Required(ErrorMessage = "Введите стоимость оттисков")]
         [Range(0.037, 0.3, ErrorMessage = "Стоимость оттисков в пределах 0,037-0,3")]
         public double ImpressionLT9999 { get; set; }
 
-        [Display(Name = "Стоимость оттисков при тираже листов формата оборудования от 10 000, грн")]
+        [Display(Name = "от 10 000, грн")]
         [Required(ErrorMessage = "Введите стоимость оттисков")]
         [Range(0.037, 0.3, ErrorMessage = "Стоимость оттисков в пределах 0,037-0,3")]
         public double ImpressionGT9999 { get; set; }

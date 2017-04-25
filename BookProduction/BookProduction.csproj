@@ -90,6 +90,7 @@
     <None Include="PrintingPresses\Shinohara.cs" />
     <Compile Include="PrintingPresses\PrintingPress.cs" />
     <Compile Include="PrintingPresses\Shinohara52_2.cs" />
+    <Compile Include="PrintingPresses\ZeroColorPress.cs" />
     <Compile Include="PrintingPresses\ZirkonForta660.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
