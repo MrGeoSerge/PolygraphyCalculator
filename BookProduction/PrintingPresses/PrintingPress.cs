@@ -28,71 +28,71 @@ namespace BookProduction.PrintingPresses
             PressSheetFormat = GetPressSheetsFormat();
         }
 
-        internal abstract double GetFormPriceValue();
+        public abstract double GetFormPriceValue();
 
-        internal abstract double GetFittingPriceValue();
+        public abstract double GetFittingPriceValue();
 
-        internal abstract double GetTechNeedsPriceValue();
+        public abstract double GetTechNeedsPriceValue();
 
-        internal abstract double GetImpressionPriceValue();
+        public abstract double GetImpressionPriceValue();
 
-        internal abstract IssueFormat GetPressSheetsFormat();
+        public abstract IssueFormat GetPressSheetsFormat();
 
 
-        internal int GetPagesPerOneImposition()
+        public int GetPagesPerOneImposition()
         {
             return TaskToPrint.Format.Fraction / PressSheetFormat.Fraction;
         }
 
-        internal double GetImpositionsPerBook()
+        public double GetImpositionsPerBook()
         {
             return (double)TaskToPrint.PagesNumber / GetPagesPerOneImposition();
         }
 
-        internal double GetPrintingSheetsPerBook()
+        public double GetPrintingSheetsPerBook()
         {
             return GetImpositionsPerBook() / 2;//лицо и оборот
         }
 
-        internal int GetPrintingSheetsPerPrintRun()
+        public int GetPrintingSheetsPerPrintRun()
         {
             return (int)Math.Round(GetPrintingSheetsPerBook() * TaskToPrint.PrintRun, 
                 MidpointRounding.AwayFromZero);
         }
 
-        internal int GetPrintingForms()
+        public int GetPrintingForms()
         {
             return TaskToPrint.Colors.Total() * (int)Math.Ceiling(GetPrintingSheetsPerBook());
         }
 
-        internal double GetCostOfPrintingFoms()
+        public double GetCostOfPrintingFoms()
         {
             return GetPrintingForms() * GetFormPriceValue();
         }
 
-        internal abstract int GetImpressions();
+        public abstract int GetImpressions();
 
-        internal double GetCostOfImpressions()
+        public double GetCostOfImpressions()
         {
             return GetImpressions() * GetImpressionPriceValue();
         }
 
-        internal double GetCostOfPrinting()
+        public double GetCostOfPrinting()
         {
             return GetCostOfPrintingFoms() + GetCostOfImpressions();
         }
 
-        internal virtual int GetPaperConsumptionForTechnicalNeeds()
+        public virtual int GetPaperConsumptionForTechnicalNeeds()
         {
             return (int)Math.Ceiling(((double)(int)((GetPrintingSheetsPerPrintRun() 
                 * GetTechNeedsPriceValue() / 100) * 10)/10));
             //округляя до целых (количества листов), сначала отбрасываются сотые доли листа
         }
 
-        internal abstract int GetFittingOnPrintRun();
+        public abstract int GetFittingOnPrintRun();
 
 
-        internal virtual int GetTotalPaperConsumptionInPressFormat()
+        public virtual int GetTotalPaperConsumptionInPressFormat()
         {
             return GetPrintingSheetsPerPrintRun() + GetPaperConsumptionForTechnicalNeeds()
                 + GetFittingOnPrintRun();

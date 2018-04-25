@@ -26,17 +26,17 @@ namespace BookProduction.PrintingPresses
 
 
 
-        internal override double GetFormPriceValue()
+		public override double GetFormPriceValue()
         {
             return ZirkonPressPriceList.Form;
         }
 
-        internal override double GetFittingPriceValue()
+		public override double GetFittingPriceValue()
         {
            return ZirkonPressPriceList.Fitting;
         }
 
-        internal override double GetTechNeedsPriceValue()
+		public override double GetTechNeedsPriceValue()
         {
              if(TaskToPrint.Colors.ToString() == "1+1")
             {
@@ -48,7 +48,7 @@ namespace BookProduction.PrintingPresses
                     * (TaskToPrint.Colors.Total() - 2);//-2 изначальных цвета
         }
 
-        internal override double GetImpressionPriceValue()
+		public override double GetImpressionPriceValue()
         {
             //if (TaskToPrint.Colors.ToString() == "1+1")
             //{
@@ -61,7 +61,7 @@ namespace BookProduction.PrintingPresses
         }
 
 
-        internal override IssueFormat GetPressSheetsFormat()
+		public override IssueFormat GetPressSheetsFormat()
         {
             //Циркон Форматы (700 * 452):
             //84*108/4 = 420мм * 540мм;

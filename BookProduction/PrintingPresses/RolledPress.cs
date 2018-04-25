@@ -21,12 +21,12 @@ namespace BookProduction.PrintingPresses
         public RolledPress(TaskToPrint taskToPrint) :
             base(taskToPrint) {}
 
-        internal override int GetImpressions()
+        public override int GetImpressions()
         {
             return GetPrintingSheetsPerPrintRun();
         }
 
-        internal override int GetFittingOnPrintRun()
+        public override int GetFittingOnPrintRun()
         {
             return (int)GetFittingPriceValue() * GetPrintingForms();
         }

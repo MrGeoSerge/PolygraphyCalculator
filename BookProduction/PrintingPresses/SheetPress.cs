@@ -20,12 +20,12 @@ namespace BookProduction.PrintingPresses
         public SheetPress(TaskToPrint taskToPrint) : 
             base(taskToPrint) { }
 
-        internal override int GetImpressions()
+		public override int GetImpressions()
         {
             return GetPrintingSheetsPerPrintRun() * (TaskToPrint.Colors.Total());
         }
 
-        internal override int GetFittingOnPrintRun()
+		public override int GetFittingOnPrintRun()
         {
             return (int)GetFittingPriceValue();
         }

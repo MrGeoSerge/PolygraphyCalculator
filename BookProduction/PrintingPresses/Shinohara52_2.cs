@@ -22,17 +22,17 @@ namespace BookProduction.PrintingPresses
         {
         }
 
-        internal override double GetFormPriceValue()
+		public override double GetFormPriceValue()
         {
             return ShinoharaPressPriceList.Form;
         }
 
-        internal override double GetFittingPriceValue()
+		public override double GetFittingPriceValue()
         {
             return ShinoharaPressPriceList.Fitting;
         }
 
-        internal override double GetTechNeedsPriceValue()
+		public override double GetTechNeedsPriceValue()
         {
             foreach (var printRun in ShinoharaPressPriceList.TechNeeds)
             {
@@ -46,7 +46,7 @@ namespace BookProduction.PrintingPresses
         }
 
 
-        internal override double GetImpressionPriceValue()
+		public override double GetImpressionPriceValue()
         {
             foreach (var printRun in ShinoharaPressPriceList.Impression)
             {
@@ -58,7 +58,7 @@ namespace BookProduction.PrintingPresses
             throw new ArgumentOutOfRangeException("для такого тиража цена оттиска не указана в прайсе");
         }
 
-        internal override IssueFormat GetPressSheetsFormat()
+		public override IssueFormat GetPressSheetsFormat()
         {
             //Шинохара Форматы (370 * 520)
              //84 * 108 / 8 = 420мм * 270мм
@@ -83,7 +83,7 @@ namespace BookProduction.PrintingPresses
 
         }
 
-        internal override int GetTotalPaperConsumptionInPressFormat()
+		public override int GetTotalPaperConsumptionInPressFormat()
         {
             int totalPaperConsumption = GetPrintingSheetsPerPrintRun() + GetPaperConsumptionForTechnicalNeeds()
                 + GetFittingOnPrintRun();
@@ -94,12 +94,12 @@ namespace BookProduction.PrintingPresses
             return totalPaperConsumption;
         }
 
-        internal override int GetFittingOnPrintRun()
+		public override int GetFittingOnPrintRun()
         {
             return (int)GetFittingPriceValue() * GetPrintingForms();
         }
 
-        internal new int GetPaperConsumptionForTechnicalNeeds()
+		public new int GetPaperConsumptionForTechnicalNeeds()
         {
             return base.GetPaperConsumptionForTechnicalNeeds() * GetPrintingForms() ;
         }

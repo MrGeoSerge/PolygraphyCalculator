@@ -22,16 +22,16 @@ namespace BookProduction.PrintingPresses
             base(taskToPrint)
         { }
 
-        //-----установка значений прайса-----
-        //стоимость формы
-        internal override double GetFormPriceValue()
+		//-----установка значений прайса-----
+		//стоимость формы
+		public override double GetFormPriceValue()
         {
             return RapidaPressPriceList.Form;
         }
 
 
-        //стоимость приладки
-        internal override double GetFittingPriceValue()
+		//стоимость приладки
+		public override double GetFittingPriceValue()
         {
             //приладка(зависит от цветности) - и от тиража, то есть, если технужды > 0, приладка = 0
             if (GetTechNeedsPriceValue() > 0)
@@ -41,8 +41,8 @@ namespace BookProduction.PrintingPresses
             return RapidaPressPriceList.Fitting[TaskToPrint.Colors.ToString()];
         }
 
-        //процент технужд
-        internal override double GetTechNeedsPriceValue()
+		//процент технужд
+		public override double GetTechNeedsPriceValue()
         {
             foreach (var printRun in RapidaPressPriceList.TechNeeds)
             {
@@ -54,8 +54,8 @@ namespace BookProduction.PrintingPresses
             throw new ArgumentOutOfRangeException("для такого тиража технужды не указаны в прайсе");
         }
 
-        //стоимость оттиска
-        internal override double GetImpressionPriceValue()
+		//стоимость оттиска
+		public override double GetImpressionPriceValue()
         {
             foreach (var printRun in RapidaPressPriceList.Impression)
             {
@@ -68,9 +68,9 @@ namespace BookProduction.PrintingPresses
 
         }
 
-        //метод вычисления формата листа оборудования 
-        //в зависимости от заданного формата книги
-        internal override IssueFormat GetPressSheetsFormat()
+		//метод вычисления формата листа оборудования 
+		//в зависимости от заданного формата книги
+		public override IssueFormat GetPressSheetsFormat()
         {
             //Рапида Форматы (740 * 520)
             //84*108/4 = 420мм * 540мм

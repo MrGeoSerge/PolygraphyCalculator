@@ -24,17 +24,17 @@ namespace BookProduction.PrintingPresses
             Cutting = 0.546;//рубка - параметр размера печатной ротационной машины
         }
 
-        internal override double GetFormPriceValue()
+		public override double GetFormPriceValue()
         {
             return CorosetPressPriceList.Form;
         }
 
-        internal override double GetFittingPriceValue()
+		public override double GetFittingPriceValue()
         {
             return CorosetPressPriceList.Fitting;
         }
 
-        internal override double GetTechNeedsPriceValue()
+		public override double GetTechNeedsPriceValue()
         {
             if (TaskToPrint.Colors.ToString() == "1+1")
             {
@@ -46,7 +46,7 @@ namespace BookProduction.PrintingPresses
                     * (TaskToPrint.Colors.Total() - 2);//-2 изначальных цвета
         }
 
-        internal override double GetImpressionPriceValue()
+		public override double GetImpressionPriceValue()
         {
             //По факту закоментированное не считается
             //if (TaskToPrint.Colors.ToString() == "1+1")
@@ -60,7 +60,7 @@ namespace BookProduction.PrintingPresses
         }
 
 
-        internal override IssueFormat GetPressSheetsFormat()
+		public override IssueFormat GetPressSheetsFormat()
         {
             //Коросет Форматы (840 * 546)
             //84 * 108 / 2 = 840мм * 540мм(предпочтительный!)

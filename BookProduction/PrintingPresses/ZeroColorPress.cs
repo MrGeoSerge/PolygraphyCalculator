@@ -16,22 +16,22 @@ namespace BookProduction.PrintingPresses
         {
         }
 
-        internal override double GetFittingPriceValue()
+		public override double GetFittingPriceValue()
         {
             return 0.0;
         }
 
-        internal override double GetFormPriceValue()
+		public override double GetFormPriceValue()
         {
             return 0.0;
         }
 
-        internal override double GetImpressionPriceValue()
+		public override double GetImpressionPriceValue()
         {
            return 0.0;
         }
 
-        internal override IssueFormat GetPressSheetsFormat()
+		public override IssueFormat GetPressSheetsFormat()
         {
             //Рапида Форматы (740 * 520)
             //84*108/4 = 420мм * 540мм
@@ -53,7 +53,7 @@ namespace BookProduction.PrintingPresses
             }
         }
 
-        internal override double GetTechNeedsPriceValue()
+		public override double GetTechNeedsPriceValue()
         {
             return 0.0;
         }

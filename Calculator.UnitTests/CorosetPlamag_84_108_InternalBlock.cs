@@ -13,7 +13,6 @@ using BookProduction.PriceLists;
 using BookProduction.PrintingPresses;
 using BookProduction.Tasks;
 using BookProduction.TypographyManagement;
-//using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BookProduction
 {
